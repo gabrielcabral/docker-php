@@ -1,0 +1,107 @@
+<?php
+
+require_once "Fnde/Sice/Html2pdf/Html2pdf.php";
+
+$arDados = $this->dados;
+$dataDeclaracao = Fnde_Sice_Business_Componentes::dataPorExtensoCertificado($arDados['DT_FINAL']);
+$logoGoverno = '';
+
+if (isset($arDados['LOGO_GOVERNO'])) {
+    $logoGoverno .= "<div style='text-align: center; '>
+
+					<img  src='{$arDados['LOGO_GOVERNO']}'>
+
+				</div>";
+}
+$imgTitulo = "img/titulo_declaracao_articulador.gif";
+//    <page backtop='30mm' backbottom='7mm' backleft='10mm' backright='0mm' backimgx='11' backimgy='8' backimgw='1100'></page>
+$pagina1 = <<<EOT
+
+    <page backtop="20mm" backbottom="10mm" backleft="20mm" backright="20mm">
+
+        <img width="610" heigth="50" src='{$imgTitulo}'>
+        <br>
+
+        <div style="font-family:times; font-size:12pt">
+            <p>&nbsp;</p>
+            <div style="text-align: justify;text-justify: inter-word; line-height: 2">
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Declaro para os devidos fins que
+                    <strong> {$arDados['NO_USUARIO']} </strong>
+                    exerceu a fun&ccedil;&atilde;o
+                    de ARTICULADOR do {$arDados['DS_NOME_CURSO']}, {$arDados['DS_NOME_MODULO']}, do
+                    Programa Nacional de Fortalecimento dos Conselhos Escolares no per&iacute;odo
+                    <strong> {$arDados['DT_INICIAL']} </strong> à <strong> {$arDados['DT_FINAL']} </strong>.
+
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &Eacute; responsabilidade do Articulador desempenhar atividades
+                    relacionadas ao ciclo de programa&ccedil;&atilde;o do Curso e ao acompanhamento t&eacute;cnico e pedag&oacute;gico
+                    dos Tutores, tanto na fase presencial quanto a dist&acirc;ncia, por per&iacute;odo de vincula&ccedil;&atilde;o,
+                    conforme prev&ecirc; a Resolu&ccedil;&atilde;o n&ordm; 16, de 19 de agosto de 2014, do Fundo Nacional de
+                    Desenvolvimento da Educa&ccedil;&atilde;o.</p>
+
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <p style="text-align: center;">Bras&iacute;lia/DF, {$dataDeclaracao}.</p>
+
+            <br>
+
+            <p style="text-align: center; padding:0;margin:0">{$arDados['COD_IDENTIFICADOR']}</p>
+            <div style="width:100%; text-align: center; padding-left: 150; padding-right:150">
+                <hr style="padding:0;margin:0; ">
+            </div>
+
+            <p style="text-align: center;padding:0;margin:0">
+                <strong>{$arDados['NO_SECRETARIO']}</strong><br/>
+                {$arDados['NO_CARGO']}<br/>
+                {$arDados['NO_LOCAL_ATUACAO']}
+            </p>
+            <br>
+            <br>
+            {$logoGoverno}
+        </div>
+
+    </page>
+
+    <page backtop="20mm" backbottom="10mm" backleft="20mm" backright="20mm">
+
+        <page_footer >
+            <div style="margin-left:20mm; margin-right:20mm">
+                Para verificar a autenticidade deste documento, consulte em
+                <a href="https://www.fnde.gov.br/autenticidade/index.php/">https://www.fnde.gov.br/autenticidade/index.php/</a>
+                , digitando o c&oacute;digo de assinatura apresentado nesta declara&ccedil;&atilde;o.
+            </div>
+            <br>
+            <br>
+            <br>
+        </page_footer>
+
+        <p style="text-align: center;padding:0;margin:0">
+            <strong >
+
+                MINIST&Eacute;RIO DA EDUCA&Ccedil;&Atilde;O<br />
+                FUNDO NACIONAL DE DESENVOLVIMENTO DA EDUCA&Ccedil;&Atilde;O<br />
+                CONSELHO DELIBERATIVO<br />RESOLU&Ccedil;&Atilde;O N&ordm; 16, DE 19 DE AGOSTO DE 2014
+
+            </strong>
+        </p>
+        <p>&nbsp;</p>
+
+        <p><em>Art. 7&ordm; Competem aos integrantes da rede de tutoria do Programa Nacional de Fortalecimento dos Conselhos Escolares e do Programa Nacional de Capacita&ccedil;&atilde;o de Conselheiros Municipais de Educa&ccedil;&atilde;o as seguintes responsabilidades:</em><br /><em>I - ...</em><br /><em>II - aos articuladores:</em><br /><em>a) promover e divulgar os cursos do Programa, destacando seus objetivos, crit&eacute;rios de participa&ccedil;&atilde;o e per&iacute;odo de inscri&ccedil;&atilde;o;(NR)</em><br /><em>b) elaborar em conjunto com a coordena&ccedil;&atilde;o estadual o cronograma dos cursos a serem ofertados no ano, em conson&acirc;ncia com as diretrizes do MEC;</em><br /><em>c) auxiliar os tutores nos cursos, tanto na fase presencial quanto a dist&acirc;ncia;</em><br /><em>d) orientar os tutores sobre a execu&ccedil;&atilde;o do cronograma dos cursos que ser&atilde;o ofertados;</em><br /><em>e) orientar a elabora&ccedil;&atilde;o do plano de acompanhamento pedag&oacute;gico das a&ccedil;&otilde;es desenvolvidas pelos tutores;</em><br /><em>f) coordenar e orientar os tutores dos munic&iacute;pios atendidos pelo Programa quanto &agrave; disponibiliza&ccedil;&atilde;o e &agrave; utiliza&ccedil;&atilde;o dos materiais pedag&oacute;gicos; (NR)</em><br /><em>g) organizar, em articula&ccedil;&atilde;o com a coordena&ccedil;&atilde;o estadual do Programa, os encontros presenciais dos cursos, inclusive os de tutoria, indicando a localidade e infraestrutura adequadas &agrave; realiza&ccedil;&atilde;o dos eventos;</em><br /><em>h) promover a socializa&ccedil;&atilde;o e o debate de experi&ecirc;ncias em rela&ccedil;&atilde;o aos cursos ofertados nos diferentes munic&iacute;pios do estado;</em><br /><em>i) avaliar o processo de forma&ccedil;&atilde;o dos cursistas, juntamente com os tutores, apresentando observa&ccedil;&otilde;es sobre os diversos n&iacute;veis de desenvolvimento do Programa;</em><br /><em>j) solicitar apoio t&eacute;cnico e pedag&oacute;gico &agrave; coordena&ccedil;&atilde;o estadual, sempre que necess&aacute;rio;</em><br /><em>k) assistir &agrave; coordena&ccedil;&atilde;o estadual e aos tutores no que concerne &agrave; realiza&ccedil;&atilde;o dos cursos.</em><br /><em>l) firmar seu pr&oacute;prio Termo de Compromisso no SICE e SICME, para fins de concess&atilde;o de bolsa; (NR)</em><br /><em>m) monitorar a oficializa&ccedil;&atilde;o do Termo de Compromisso do Bolsista dos tutores no SICE ou SICME; (NR)</em><br /><em>n) orientar o processo de levantamento de demandas e cursos, sistematiz&aacute;-lo e enviar informa&ccedil;&otilde;es &agrave; coordena&ccedil;&atilde;o estadual do Programa; (NR)</em><br /><em>III- ...</em></p>
+
+    </page>
+
+EOT;
+
+$pdf = new Fnde_Sice_Html2pdf_Html2pdf('P', 'A4', 'pt', true);
+$pdf->writeHTML(utf8_encode($pagina1));
+
+if ($this->donwload) {
+    $pdf->Output($this->nomeArquivo, 'I');//'I');
+    die();
+} else {
+    $pdf->Output($this->nomeArquivo, 'F');//'I');
+}

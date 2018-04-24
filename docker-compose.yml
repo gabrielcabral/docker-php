@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    privileged: true
+    container_name: container_php56
+    ports:
+     - "8888:80"
+    volumes:
+     - ./sice:/var/www/html/sice/
+     - ./zend:/usr/local/zend/
+     - ./static:/var/www/static/
+     - ./integra:/var/www/integra/
+     - ./consulta-publica:/var/www/consulta-publica/
+     - ./webservices/wssigarp:/var/www//webservices/wssigarp/

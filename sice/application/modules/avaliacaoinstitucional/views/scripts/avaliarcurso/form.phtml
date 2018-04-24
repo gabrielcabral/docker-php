@@ -1,0 +1,42 @@
+<script type="text/javascript">var baseUrl = '<?php echo $this->baseUrl(); ?>';</script>
+<style type="text/css">
+   #conteudo form label span.campoRequeridoSice,#popup_container label span.campoRequeridoSice
+	{
+		padding-left: 15px
+	}
+	
+	.campoRequeridoSice {
+		/*background: url(../../../img/campoRequerido.png) top
+			left no-repeat*/
+	}
+	
+	#conteudo fieldset.campoRequeridoSice legend,#popup_container fieldset.campoRequeridoSice legend
+	{
+		padding-left: 15px;
+		background-color: white !important;
+		background: url(../../../img/campoRequerido.png) top left no-repeat
+	}
+	
+	#conteudo fieldset.campoRequeridoSice legend,#conteudo form label span.campoRequeridoSice,#popup_container label span.campoRequeridoSice,#popup_container fieldset.campoRequeridoSice legend
+	{
+		width: 98%
+	}
+	
+	#conteudo form.labelLongo label span.campoRequeridoSice,#conteudo form.labelLongo fieldset.campoRequeridoSice legend
+	{
+		width: 98% !important
+	}
+	
+	#conteudo fieldset.campoRequeridoSice legend {
+		padding-left: 15px;
+		width: 98% !important;
+		background-color: white !important;
+		background: url(../../../img/campoRequerido.png) top left no-repeat
+	}
+</style>
+<div>
+    <?php
+echo $this->form;
+	?>
+</div>
+<script	src="<?php echo $this->baseUrl(); ?>/js/avaliacaoinstitucional.avaliarCurso.js" type="text/javascript"></script>

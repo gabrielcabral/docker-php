@@ -1,0 +1,71 @@
+<script type="text/javascript">var baseUrl = '<?php echo $this->baseUrl(); ?>';</script>
+<div id="result" style="display:none;"></div>
+<div id='preLoader'></div>
+<style type="text/css">
+    #preLoader {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #fff url(<?php echo $this->baseUrl(); ?>/img/ajax-loader.gif) no-repeat center center;
+        opacity: 0.60;
+        filter: alpha(opacity = 30);
+        -moz-opacity: 0.30;
+        position: absolute;
+        z-index: 999999;
+        display: none;
+    }
+
+    .errors li {
+        width: 400px;
+        color: #FF0000;
+    }
+
+</style>
+<form id="formTela" enctype="application/x-www-form-urlencoded" action="<?php echo $this->form->getAction(); ?>" method="post" class="labelLongo">
+    <input type="hidden" name="TIPO_USUARIO" value="<?php echo $this->arDados["NU_SEQ_TIPO_PERFIL"]; ?>">
+    <div class="tab">
+        <?php
+        if($this->arDados["NU_SEQ_TIPO_PERFIL"] != 7){ ?>
+            <ul class="navigation">
+                <li class="active"><a href="#abaPerfil">Perfil</a></li>
+                <li><a href="#abaDadosPessoais">Dados Pessoais</a></li>
+                <li><a href="#abaDocumentacao">Documentação</a></li>
+                <li><a href="#abaLogradouro">Logradouro</a></li>
+                <li><a href="#abaFormacaoAcademica">Formação Acadêmica</a></li>
+                <li><a href="#abaDadosFuncionais">Dados Funcionais</a></li>
+                <li><a href="#abaOutrasInformacoes">Outras Informações</a></li>
+                <li id="liDadosPagamento"><a href="#abaDadosPagamento">Dados para pagamento</a></li>
+            </ul>
+            <?php echo $this->form->abaPerfil; ?>
+            <?php echo $this->form->abaDadosPessoais; ?>
+            <?php echo $this->form->abaDocumentacao; ?>
+            <?php echo $this->form->abaLogradouro; ?>
+            <?php echo $this->form->abaFormacaoAcademica; ?>
+            <?php echo $this->form->abaDadosFuncionais; ?>
+            <?php echo $this->form->abaOutrasInformacoes; ?>
+            <?php echo $this->form->abaDadosPagamento; ?>
+            <?php echo $this->form->identificadorHidden; ?>
+            <?php echo $this->form->botoes ?>
+        <?php } else { ?>
+            <ul class="navigation">
+                <li class="active"><a href="#abaDadosPessoais">Dados Pessoais</a></li>
+                <li><a href="#abaLogradouro">Contatos</a></li>
+                <li><a href="#abaDadosEscola">Dados da Escola</a></li>
+            </ul>
+            <?php echo $this->form->abaDadosPessoais; ?>
+            <?php echo $this->form->abaLogradouro; ?>
+            <?php echo $this->form->abaDadosEscola; ?>
+            <?php echo $this->form->identificadorHidden; ?>
+            <?php echo $this->form->botoes ?>
+        <?php } ?>
+    </div>
+    <div class="notas">Campo obrigatório</div>
+</form>
+<script src="<?php echo $this->baseUrl(); ?>/js/util.js"  type="text/javascript"></script>
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.usuario.js"  type="text/javascript"></script>
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.usuario.escola.js"  type="text/javascript"></script>
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.usuario.perfil.js"  type="text/javascript"></script>
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.usuario.dados.pessoais.js"  type="text/javascript"></script>
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.usuario.outras.atividades.js"  type="text/javascript"></script>
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.usuario.banco.js"  type="text/javascript"></script>

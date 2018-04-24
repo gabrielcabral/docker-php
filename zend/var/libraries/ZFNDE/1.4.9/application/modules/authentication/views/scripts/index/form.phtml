@@ -1,0 +1,19 @@
+<div id="loginBase">
+    <div id="login">
+        <h1>
+            <span style="background-image: url(/static/images/login/login_cabecalho_provisorio.png)"></span>Acesso Restrito<br />
+            Autenticação de usuários
+        </h1>
+        <?php
+        if( count( $this->stMensagem ) ){
+          echo '<div id="mensagens">';
+          foreach( $this->stMensagem as $stMensagem ){
+            echo '<p class="msgErro">'.utf8_decode($stMensagem).'</p>';
+          }
+          echo '</div>';
+        }
+        echo $this->form . PHP_EOL;
+        ?>
+        <div class="rodape"><img src="/static/images/login/login_fnde.png" title="FNDE" alt="FNDE" /></div>
+    </div>
+</div>

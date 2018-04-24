@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="2.0">
+    <name>sice</name>
+    <summary>sice</summary>
+    <description>sice</description>
+    <version>
+        <release>d5e6eb</release>
+    </version>
+    <docroot>public</docroot>
+    <scriptsdir>scripts</scriptsdir>
+    <dependencies>
+    <required>
+      <library>
+        <name>ZFNDE</name>
+      </library>
+      </required>
+    </dependencies>
+</package>

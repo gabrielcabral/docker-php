@@ -1,0 +1,63 @@
+[MAS SUPPORT]
+SupportMas_Prj=1
+[Target:WebHelp]
+SupportMas_Prj=1
+ResultFileName=!SSL!\WebHelp\SICE.htm
+SSLayoutType=2
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[Target:WebHelp Pro]
+SupportMas_Prj=1
+ResultFileName=!SSL!\WebHelp_Pro\SICE.htm
+SSLayoutType=32
+ServerProjectName=SICE
+CreateProjectTime=14:50, June 19, 2013
+CreateProjectUser=poliane.silva
+SupportMas_MPJ=1
+MindReader Server=
+ActionID For Generation=1005
+Remove Folder with prompt=1
+ViewFileName=!SSL!\WebHelp_Pro\SICE.htm
+ResultStatus=0
+BuildTimeHi=30305567
+BuildTimeLow=444384211
+Enable Result Dialog=1
+[Target:Microsoft HTML Help]
+ResultFileName=!SSL!\Microsoft_HTML_Help\SICE.chm
+SSLayoutType=1
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[Target:FlashHelp]
+ResultFileName=!SSL!\FlashHelp\SICE.htm
+SSLayoutType=2
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[Target:Printed Documentation]
+ResultFileName=!SSL!\Printed_Documentation\SICE.doc
+SSLayoutType=7
+[Target:XML Output]
+ResultFileName=!SSL!\XML_Output\SICE.xml
+SSLayoutType=8192
+[PreSingleSource]
+Html Help Project=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.hhp
+Table Of Content=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.hhc
+Index=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE_merged$.hhk
+See Also Index=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.hha
+Browse Sequence=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.brs
+Topic Properties=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.trs
+Active Folders=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.trf
+Baggage Files=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.trb
+Skin List=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.trk
+OriginalHhk=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.hhk
+Active Layout Names=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.trl
+Default Topic=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\Apresentação.htm
+Build Tags0=20863;Print | Online
+Build Tags=
+Build Expression=
+Language ID=1046
+Language Name=Português(Brasil)
+Language=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\RoboHHRE.lng
+Stop List=C:\u02\php\sice\library\Fnde\Sice\Help\cursista\SICE.stp

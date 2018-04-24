@@ -1,0 +1,88 @@
+<script type="text/javascript">var baseUrl = '<?php echo $this->baseUrl(); ?>';</script> 
+<?php echo $this->form; ?>
+<div class="listagem dataTable">
+<?php foreach($this->report as $periodo => $dados):?>
+<table class="dataTable">
+    <caption>Período de vinculação <?php echo $periodo;?> - <?php echo $dados['periodo']['dataInicial'];?> à <?php echo $dados['periodo']['dataFinal'];?></caption>
+    <thead>
+    <tr>
+        <th>Executor</th>
+        <th>Avaliador</th>
+        <th>Aptidão</th>
+        <th>Data</th>
+        <th>Descrição</th>
+        <th>Valor</th>
+    </tr>
+    </thead>
+    <tbody>
+        <?php foreach($dados['bolsas'] as $bolsa):?>
+            <tr>
+                <td><?php echo $bolsa['executor'];?></td>
+                <td><?php echo $bolsa['avaliador'];?></td>
+                <td><?php echo $bolsa['aptidao'];?></td>
+                <td><?php echo $bolsa['data'];?></td>
+                <td><?php echo $bolsa['descricao'];?></td>
+                <td><?php echo $bolsa['valor'];?></td>
+            </tr>
+        <?php endforeach;?>
+    </tbody>
+</table>
+    <br>
+<?php endforeach;?>
+</div>
+
+<?php if($this->arrWsSGBSituacaoDoBolsista){ ?>
+    <div class="listagem dataTable">
+        <table class="dataTable">
+            <caption>Histórico de Bolsas do SGB</caption>
+            <thead>
+            <tr>
+                <th rowspan="2">Programa</th>
+                <th rowspan="2">Parcela</th>
+                <th rowspan="2">Mês/Ano</th>
+                <th rowspan="2">Valor</th>
+                <th align="center" colspan="2">Gestor Local</th>
+                <th colspan="2">Gestor MEC</th>
+                <th colspan="2">Gestor FNDE</th>
+                <th colspan="2">Liberação FNDE para Banco</th>
+                <th rowspan="2">Situação do Pagamento</th>
+            </tr>
+            <tr>
+                <th>Situação</th>
+                <th>Data</th>
+                <th>Situação</th>
+                <th>Data</th>
+                <th>Situação</th>
+                <th>Data</th>
+                <th>Situação</th>
+                <th>Data</th>
+            </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($this->arrWsSGBSituacaoDoBolsista['dadosPagamentos'] as $item){
+                    ?>
+                    <tr>
+                        <td><?php echo utf8_decode($item['programa']); ?></td>
+                        <td><?php echo $item['parcela']; ?></td>
+                        <td><?php echo $item['referencia']; ?></td>
+                        <td><?php echo $item['valor']; ?></td>
+                        <td><?php echo utf8_decode($item['gestorLocalSituacao']); ?></td>
+                        <td><?php echo $item['gestorLocalAutorizacao']; ?></td>
+                        <td><?php echo utf8_decode($item['gestorMecSituacao']); ?></td>
+                        <td><?php echo $item['gestorMecHomologacao']; ?></td>
+                        <td><?php echo utf8_decode($item['gestorFndeSituacao']); ?></td>
+                        <td><?php echo $item['gestorFndeEnvioSigef']; ?></td>
+                        <td><?php echo utf8_decode($item['liberacaoFndeBancoSituacao']); ?></td>
+                        <td><?php echo $item['liberacaoFndeBancoLibOb']; ?></td>
+                        <td><?php echo utf8_decode($item['situacaoPagamento']); ?></td>
+                    </tr>
+                    <?php
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
+<?php } ?>
+
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.visualizahistbolsa.js"  type="text/javascript"></script>

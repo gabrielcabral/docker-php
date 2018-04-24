@@ -1,0 +1,1756 @@
+/* CSS Document */
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+}
+html, body {
+	height: 100%;
+}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, hr, th, td, img {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0;
+}
+
+/* CONTEUDO ************************************************/
+#conteudo {
+	background: url("../images/interface/background/fundoConteudo.png") repeat-x top left;
+	color: #333;
+	font-size: .8em;
+}
+/* CONTEUDO :: CABEÇALHO DA PÁGINA ************************/
+#conteudoCabecalho {
+	color: #22577b;
+	height: 55px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background: url("../images/interface/background/fundoCabecalhoTitulo.png") repeat-x top left;
+	padding: 13px 0 0 20px;
+	margin-bottom: 15px;
+}
+#conteudoCabecalho h1 {
+	font-size: 1.4em;
+}
+#conteudoCabecalho h2 {
+	font-size: 1.2em;
+	font-style: italic;
+	color: #3e779d;
+	line-height: 1em;
+	padding-left: 2px;
+	margin-bottom: 2px;
+}
+/*Menu de contexto do caso de uso*/
+#menuContexto {
+	display: table;
+	width: 100%;
+	margin: -15px 0 10px 0;
+}
+#menuContexto ul {
+	list-style: none;
+	height: 27px;
+	background: url("../images/interface/background/fundoMenuContexto.png") repeat-x top left;
+	margin: 0 !important;
+	padding: 0 10px 0 0 !important;
+	float: right;
+}
+#menuContexto ul li {
+	line-height: 27px;
+	padding: 0 10px !important;
+	margin: 0 !important;
+	font-size: .9em;
+	background: url("../images/interface/background/fundoMenuContextoSeparador.png") no-repeat top left;
+	float: left
+}
+#menuContexto ul li:first-child {
+	background: url("../images/interface/background/fundoMenuContextoCanto.png") no-repeat top left;
+	padding-left: 25px !important;
+}
+#menuContexto ul li.active a {
+	color: #ececec
+}
+#menuContexto ul a {
+	color: #013356;
+	font-weight: bold;
+	text-decoration: none
+}
+#menuContexto ul a:hover {
+	text-decoration: underline
+}
+/* CONTEUDO :: MENSAGENS **********************************/
+#mensagens {
+	margin-bottom: 15px;
+}
+
+#mensagens div {
+	color: #333333 !important;
+}
+
+#mensagens div.msgOrientacao p, #mensagens div.msgSucesso p, #mensagens div.msgAlerta p, #mensagens div.msgErro p {
+	padding: 0 !important;
+	margin: 2px 0 !important;
+}
+
+#mensagens div.msgOrientacao, #mensagens div.msgSucesso, #mensagens div.msgAlerta, #mensagens div.msgErro {
+	margin: 5px 20px;
+	padding-left: 40px;
+	padding-bottom: 5px;
+	min-height: 30px;
+}
+
+#mensagens div.msgOrientacao h3, #mensagens div.msgSucesso h3, #mensagens div.msgAlerta h3, #mensagens div.msgErro h3 {
+	font-size: 1.3em;
+	line-height: 30px;
+	margin: 0px;
+}
+
+#mensagens div.msgOrientacao ul, #mensagens div.msgSucesso ul, #mensagens div.msgAlerta ul, #mensagens div.msgErro ul {
+	list-style: decimal
+}
+
+#mensagens div.msgOrientacao {
+	background: url("../images/interface/icone/message/msgOrientacao.png") no-repeat 5px 2px #f9f9f9;
+	border: 1px solid #dbe6ee;
+	border-bottom: 2px solid #3CB4C3;
+}
+
+div.msgOrientacao h3, div.msgOrientacao h4 {
+	color: #3CB4C3 !important
+}
+
+#mensagens div.msgSucesso {
+	background: url("../images/interface/icone/message/msgSucesso.png") no-repeat 5px 2px #eff7e0;
+	border: 1px solid #daecb7;
+	border-bottom: 2px solid #408C2E;
+}
+
+div.msgSucesso h3, div.msgSucesso h4 {
+	color: #408C2E !important;
+}
+#mensagens div.msgAlerta {
+	background: url("../images/interface/icone/message/msgAlerta.png") no-repeat 5px 2px #fff6d8;
+	border: 1px solid #ebd0b8;
+	border-bottom: 2px solid #E77917;
+}
+
+div.msgAlerta h3, div.msgAlerta h4 {
+	color: #E77917 !important;
+}
+#mensagens div.msgErro {
+	background: url("../images/interface/icone/message/msgErro.png") no-repeat 5px 2px #fff2f2;
+	border: 1px solid #c06464;
+	border-bottom: 2px solid #BF231B;
+}
+
+div.msgErro h3, div.msgErro h4 {
+	color: #BF231B !important;
+}
+
+/* Mensagens de Contexto */
+span.msgOrientacao, span.msgErro {
+	font-size: .85em;
+	font-style: italic;
+	height: 15px;
+	display: block !important;
+	width: auto !important;
+	border: none !important;
+}
+span.msgOrientacao span, span.msgErro span {
+	display: inline !important;
+	border: 0 !important
+}
+span.msgOrientacao {
+	background: url("../images/interface/icone/message/setaOrientacao.gif") no-repeat 0 1px;
+	padding-left: 15px;
+	color: #999;
+}
+
+.textCount {
+	color: #666;
+	text-align: right;
+	margin-bottom: 0 !important;
+}
+
+.textCount span {
+	display: inline !important;
+	border: none !important;
+	padding: 0 2px;
+}
+
+span.msgErro {
+	background: url("../images/interface/icone/message/setaErro.gif") no-repeat 0 1px;
+	padding-left: 20px;
+	color: #BF231B
+}
+
+ul.msgErro {
+	padding: 0 !important;
+}
+
+ul.msgErro li {
+	margin: 0 0 2px 0 !important;
+	padding: 0 0 0 15px !important;
+	color: #BF231B;
+	list-style: none;
+	background: url("../images/interface/icone/message/setaErro.gif") no-repeat 0 1px;
+	font-size: .85em;
+	font-style: italic;
+}
+
+#conteudo form label.longo ul.msgErro {
+	margin: 0 0 15px 0 !important;
+}
+fieldset div.msgSucesso, .listagem div.msgSucesso, .listagem div.msgErro, fieldset div.msgErro {
+	margin: 5px 0px 15px 0;
+	padding: 3px 20px;
+	min-height: 20px;
+}
+fieldset div.msgSucesso h3, fieldset div.msgSucesso h4, .listagem div.msgSucesso h3, .listagem div.msgSucesso h4, fieldset div.msgErro h3, fieldset div.msgErro h4, .listagem div.msgErro h3, .listagem div.msgErro h4 {
+	font-size: 1.1em !important;
+	line-height: 18px;
+	padding-left: 10px !important;
+	margin: 0px
+}
+fieldset div.msgSucesso, .listagem div.msgSucesso {
+	background: url("../images/interface/icone/message/msgSucesso_20x20.png") no-repeat 5px 2px #eff7e0;
+	border: 1px solid #daecb7;
+}
+fieldset div.msgErro, .listagem div.msgErro {
+	background: url("../images/interface/icone/message/msgErro_20x20.png") no-repeat 5px 2px #fff2f2;
+	border: 1px solid #d4807c;
+}
+fieldset div.msgErro ul {
+	list-style: decimal
+}
+.listagem div.msgSucesso, .listagem div.msgErro {
+	margin: 0 !important;
+	border-bottom-width: 2px !important;
+}
+/* CONTEUDO :: ELEMENTOS TEXTUAIS ******************************/
+
+/* Títulos */
+#conteudo h3, #conteudo h4, #conteudo h5, #conteudo h6 {
+	margin: 0 20px 5px 20px;
+}
+#conteudo h3 {
+	font-size: 1.4em;
+	color: #22577B
+}
+#conteudo h4 {
+	font-size: 1.3em;
+	color: #578CAF
+}
+#conteudo h5 {
+	font-size: 1.2em;
+	color: #8EB5CF;
+	font-style: italic
+}
+#conteudo h6 {
+	font-size: .85em;
+	color: #333;
+	font-style: italic
+}
+#conteudo h3 a:hover, #conteudo h4 a:hover, #conteudo h5 a:hover, #conteudo h6 a:hover {
+	text-decoration: underline
+}
+/*Paragrafo*/
+#conteudo p {
+	padding: 0 10px;
+	margin: 0 20px 10px 20px
+}
+#conteudo p.destaque {
+	border: 1px solid #999;
+	background-color: #f4f4f4;
+	padding: 10px;
+}
+/* Listas */
+#conteudo ul, #conteudo ol, #conteudo dl {
+	margin: 0px 10px 10px 10px;
+	padding: 0 10px
+}
+#conteudo ul li ul, #conteudo ol li ol, #conteudo ul li ol, #conteudo ol li ul {
+	margin: 0;
+	padding: 0
+}
+#conteudo li {
+	margin-left: 20px;
+	padding-left: 5px;
+}
+#conteudo dl dt {
+	font-weight: bold
+}
+#conteudo dl dd {
+	margin: 3px 10px 15px 10px;
+}
+/* Separador */
+#conteudo hr {
+	border-bottom: 1px solid #ccc;
+	clear: both;
+	margin: 10px 20px;
+}
+/* CONTEUDO :: FORMULARIOS ******************************/
+#conteudo form {
+	margin: 2px 20px;
+}
+/* Elementos textuais */
+#conteudo form h3, #conteudo form h4, #conteudo form h5, #conteudo form h6 {
+	margin-left: 0px !important;
+	margin-right: 0px !important
+}
+
+#conteudo form p {
+	margin-left: 0px !important;
+	margin-right: 0px !important
+}
+#conteudo form hr {
+	margin: 10px 0px !important;
+}
+#conteudo form dl {
+	margin: 0px 0px 10px 0px;
+	padding: 0 !important
+}
+/* FIM :: Elementos textuais */
+#conteudo form label, .modal form label {
+	display: block;
+	margin-bottom: 6px;
+}
+
+#conteudo form label > span, .modal label span {
+	display: inline-block;
+	border-bottom: 1px dotted #dedede;
+	cursor: pointer;
+	vertical-align: top
+}
+
+#conteudo form label span.campoRequerido, .modal label span.campoRequerido {
+	padding-left: 15px;
+}
+
+#conteudo form label.longo span:first-child, .modal label.longo span:first-child {
+	display: block !important;
+	width: auto;
+	margin-bottom: 2px;
+}
+
+input, button, select, textarea {
+	border: 1px solid #999999;
+	margin-bottom: 4px;
+	vertical-align: middle;
+}
+
+input:focus, button:focus, select:focus, textarea:focus {
+	color: #333;
+	background-color: #EFF9FF;
+	outline: 1px solid #2b84bf
+}
+
+input[readonly], input[readonly]:focus {
+	border: 1px solid transparent;
+	background: none !important;
+}
+
+.campoRequerido {
+	background: url("../images/interface/background/campoRequerido.png") top left no-repeat
+}
+.campoErro {
+	color: #BF231B;
+	outline: 1px solid #BF231B;
+	background-color: #fff4f3
+}
+
+div.campoErro {
+	padding: 2px 5px
+}
+
+/*Agrupador*/
+#conteudo fieldset, .modal fieldset {
+	padding: 10px;
+	border: 1px dotted #999 !important;
+	margin-bottom: 6px;
+}
+
+#conteudo fieldset legend, .modal fieldset legend {
+	color: #578CAF;
+	font-weight: bold;
+	font-size: 1em;
+	background-color: #fff
+}
+
+#conteudo fieldset.agrupador, .modal fieldset.agrupador {
+	display: table;
+	padding: 0;
+	position: relative;
+	border: 0 !important;
+}
+
+#conteudo fieldset.agrupador legend, .modal fieldset.agrupador legend {
+	display: block;
+	border-bottom: 1px dotted #dedede;
+	color: #333;
+	font-weight: normal;
+	position: absolute;
+	left: 0;
+	top: 1px;
+}
+
+#conteudo fieldset.agrupador input, .modal fieldset.agrupador input {
+	/*margin-right:5px;*/
+}
+
+#conteudo fieldset.inLine label, .modal fieldset.inLine label {
+	margin-left: 1px !important;
+	margin-right: 10px;
+	display: inline !important;
+}
+
+#conteudo fieldset.inLine label span, .modal fieldset.inLine label span {
+	display: inline !important;
+	width: auto !important;
+	border: 0;
+}
+
+#conteudo fieldset.inLine label span.msgErro, .modal fieldset.inLine label span.msgErro {
+	margin: 0 !important;
+}
+
+#conteudo label.inLine, .modal label.inLine {
+	display: inline
+}
+
+#conteudo fieldset.campoRequerido legend, .modal fieldset.campoRequerido legend {
+	padding-left: 15px;
+	background: url("../images/interface/background/campoRequerido.png") top left no-repeat;
+}
+
+#conteudo fieldset.listaSelecao label, .modal fieldset.listaSelecao label {
+	float: left
+}
+
+#conteudo fieldset.listaSelecao label > span, .modal fieldset.listaSelecao label > span {
+	text-transform: lowercase;
+}
+
+#conteudo fieldset.listaSelecao label span, #conteudo fieldset.listaSelecao label select, .modal fieldset.listaSelecao label span, .modal fieldset.listaSelecao label select {
+	float: left;
+	clear: left;
+}
+
+#conteudo fieldset.listaSelecao div, .modal fieldset.listaSelecao div {
+	float: left;
+	margin-right: 15px;
+	margin-top: 17px;
+	width: 30px;
+}
+
+#conteudo fieldset.listaSelecao div button, .modal fieldset.listaSelecao div button {
+	width: 30px;
+}
+
+/* Editor HTML */
+.agrupador span.cke_skin_fnde {
+	margin-bottom: 5px !important
+}
+
+/* Comprimento dos label - Padrão */
+#conteudo form label span, #conteudo fieldset.agrupador legend, .modal label span, .modal fieldset.agrupador legend {
+	width: 150px;
+}
+
+#conteudo fieldset.campoRequerido legend, #conteudo form label span.campoRequerido, .modal label span.campoRequerido, .modal fieldset.campoRequerido legend {
+	width: 135px;
+}
+
+#conteudo fieldset.agrupador, .modal fieldset.agrupador {
+	padding-left: 155px;
+}
+
+span.msgOrientacao, span.msgErro, .textCount {
+	margin: 0 0 15px 155px;
+	clear: left
+}
+
+ul.msgErro {
+	margin: 0 0 15px 155px !important;
+}
+
+/* Label longos */
+#conteudo form.labelLongo label span, #conteudo form.labelLongo fieldset.agrupador legend {
+	width: 250px !important;
+}
+#conteudo form.labelLongo label span.campoRequerido, #conteudo form.labelLongo fieldset.campoRequerido legend {
+	width: 235px !important;
+}
+#conteudo form.labelLongo fieldset.agrupador {
+	padding-left: 255px !important;
+}
+#conteudo form.labelLongo fieldset.agrupador.inLine label {
+	margin-left: 0 !important;
+}
+form.labelLongo span.msgOrientacao, form.labelLongo span.msgErro, form.labelLongo .textCount {
+	margin: 0 0 15px 255px !important;
+}
+#conteudo form.labelLongo ul.msgErro {
+	margin: 0 0 15px 255px !important;
+}
+#conteudo form.labelLongo .agrupador span.cke_skin_fnde {
+	margin-left: 260px !important
+}
+
+/* COMPONENTE
+ >> Botões
+ _____________ */
+
+div.barraBtsAcoes {
+	text-align: right;
+	padding: 4px 0;
+	margin: 10px 20px;
+	display: block !important;
+	border-top: 2px solid #8fb3c9
+}
+#conteudo form div.barraBtsAcoes {
+	margin: 10px 0 !important;
+}
+
+div.tab div.tabContainer div.barraBtsAcoes {
+	text-align: left !important;
+	border-top: none
+}
+
+#conteudo #buttons ul, #conteudo #buttons ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#conteudo #buttons ul li {
+	float: left;
+}
+#conteudo #buttons ul li button {
+	display: block;
+}
+input, button, select {
+	cursor: pointer
+}
+input[disabled], button[disabled], select[disabled], option[disabled] {
+	cursor: default
+}
+option[disabled] {
+	background-color: #ececec;
+}
+
+input[type=submit], input[type=reset], input[type=button], button, input.ui-state-hover[type=submit], input.ui-state-hover[type=reset], input.ui-state-hover[type=button], button.ui-state-hover {
+	background: url('../images/interface/background/botoes.png') no-repeat;
+	background-position: 0 0;
+	padding: 0 5px;
+	margin-left: 5px;
+	line-height: 22px;
+	height: 22px;
+}
+
+.btnConfirmar, .btnCancelar, .btnAdicionar, .btnExcluir, .btnPesquisar, .btnAnterior, .btnImprimir, .btnGerarPDF, .btnGerarPlanilha, .btnConfirmar.ui-state-hover, .btnCancelar.ui-state-hover, .btnAdicionar.ui-state-hover, .btnExcluir.ui-state-hover, .btnPesquisar.ui-state-hover, .btnAnterior.ui-state-hover, .btnImprimir.ui-state-hover, .btnGerarPDF.ui-state-hover, .btnGerarPlanilha.ui-state-hover {
+	background-image: url('../images/interface/background/botoes.png');
+	padding-left: 25px !important;
+	background-repeat: no-repeat;
+}
+.btnProximo {
+	background-image: url('../images/interface/background/botoes.png');
+	padding-right: 25px !important;
+	background-repeat: no-repeat
+}
+
+.btnConfirmar {
+	background-position: 0px -20px !important;
+}
+
+[disabled].btnConfirmar {
+	background-position: 0px -40px !important;
+}
+
+.btnCancelar {
+	background-position: 0px -60px !important;
+}
+[disabled].btnCancelar {
+	background-position: 0px -80px !important;
+}
+.btnAdicionar {
+	background-position: 0px -100px !important;
+}
+[disabled].btnAdicionar {
+	background-position: 0px -120px !important;
+}
+
+.btnExcluir {
+	background-position: 0px -140px !important;
+}
+[disabled].btnExcluir {
+	background-position: 0px -160px !important;
+}
+
+.btnPesquisar {
+	background-position: 0px -180px !important;
+}
+[disabled].btnPesquisar {
+	background-position: 0px -200px !important;
+}
+
+.btnAnterior {
+	background-position: 0px -220px !important;
+}
+[disabled].btnAnterior {
+	background-position: 0px -240px !important;
+}
+
+.btnProximo {
+	background-position: right -260px !important;
+}
+[disabled].btnProximo {
+	background-position: right -280px !important;
+}
+
+.btnImprimir {
+	background-position: 0px -300px !important;
+}
+[disabled].btnImprimir {
+	background-position: 0px -320px !important;
+}
+
+.btnGerarPDF {
+	background-position: 0px -340px !important;
+}
+[disabled].btnGerarPDF {
+	background-position: 0px -360px !important;
+}
+
+.btnGerarPlanilha {
+	background-position: 0px -380px !important;
+}
+[disabled].btnGerarPlanilha {
+	background-position: 0px -400px !important;
+}
+
+.btnLogin {
+	margin-left: 120px !important
+}
+/*Notas*/
+.notas {
+	display: inline;
+	float: left;
+	padding-left: 15px;
+	font-size: .85em;
+	color: #666666;
+	background-image: url('../images/interface/icone/form/campoRequerido.png');
+	background-position: center left;
+	background-repeat: no-repeat
+}
+
+.legenda {
+	background-color: #FBFBFB;
+	border: 1px solid #F3F3F3;
+	display: block !important;
+	margin: 0 20px 5px;
+	padding: 5px 10px;
+}
+
+form .legenda {
+	margin: 0 0 5px !important;
+}
+
+.legenda span {
+	float: left
+}
+
+.legenda ul {
+	margin: 0;
+	padding: 0;
+	display: inline
+}
+
+.legenda ul li {
+	font-weight: bold;
+	list-style: square;
+	list-style-position: inside;
+	float: left;
+	margin: 0 !important;
+	padding: 0 10px !important;
+	border-left: 1px dotted #d4d4d4;
+}
+
+.legenda ul li:first-child {
+	border-left: none !important
+}
+
+.corAzul {
+	color: #0066CC !important
+}
+.corVerde {
+	color: #006600 !important
+}
+.corVermelho {
+	color: #990000 !important
+}
+.corLaranja {
+	color: #FF9900 !important
+}
+.corRoxo {
+	color: #6633CC !important
+}
+
+li.corAzul, li.corVerde, li.corVermelho, li.corLaranja, li.corRoxo {
+	font-weight: bold
+}
+
+/* CONTEUDO :: FOMATADORES ***************************/
+.formatValor, .formatValorNegativo {
+	text-align: right
+}
+
+.formatValorNegativo {
+	color: #CC3300 !important
+}
+
+/* CONTEUDO :: LISTAGEM ******************************/
+.listagem {
+	display: block !important;
+	margin: 5px 20px;
+	position: relative !important;
+}
+#conteudo form div.listagem {
+	margin: 5px 0 !important;
+}
+
+.listagem table caption {
+	font-size: 1em;
+	color: #193141;
+	font-weight: bold;
+	text-align: left;
+	height: 32px;
+	line-height: 32px;
+	background: url('../images/interface/background/tabBarra.png') top left repeat-x;
+	padding: 0 8px;
+	border: 1px solid #c3c3c3;
+	border-radius: 5px 5px 0 0;
+}
+.listagem table {
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 1px solid #6e8ea3;
+}
+.listagem table.list {
+	border-bottom: none !important;
+}
+
+.listagem table thead tr {
+	background: #88a8bd url('../images/interface/background/tabHead.png') bottom left repeat-x;
+}
+
+.listagem table thead th {
+	color: #001025;
+	text-align: left;
+	font-weight: normal;
+	border: 1px solid #6e8ea3;
+}
+.listagem table thead th a {
+	color: #fff !important
+}
+.listagem table th, .listagem table td {
+	padding: 4px;
+	vertical-align: middle
+}
+.listagem table tr td {
+	border: 1px dotted #6e8ea3;
+}
+.listagem table tr.odd {
+	background: #eaf0f7
+}
+.listagem table tr.even {
+	background: #f4f7fb
+}
+
+.listagem table tr.odd .sorting_1 {
+	background: #dce5f1
+}
+.listagem table tr.odd .sorting_2, .listagem table tr.odd .sorting_3 {
+	background: #e4ebf4
+}
+
+.listagem table tr.even .sorting_1 {
+	background: #e7edf5
+}
+.listagem table tr.even .sorting_2, .listagem table tr.even .sorting_3 {
+	background: #eef3f8
+}
+
+.listagem table tr.odd .icons a {
+	border-color: #eaf0f7 !important
+}
+.listagem table tr.odd .icons a:hover {
+	border-color: #6E8EA3 !important
+}
+.listagem table tr.even .icons a {
+	border-color: #f4f7fb !important
+}
+.listagem table tr.even .icons a:hover {
+	border-color: #6E8EA3 !important
+}
+
+th.sorting {
+	background-image: url('../images/interface/background/tabSorting.png');
+}
+th.sorting_asc {
+	background-image: url('../images/interface/background/tabSortingAsc.png');
+}
+th.sorting_desc {
+	background-image: url('../images/interface/background/tabSortingDesc.png');
+}
+
+th.sorting, th.sorting_asc, th.sorting_desc {
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 15px !important;
+}
+
+th.itemSelect {
+	background-position: 7px !important;
+}
+
+.listagem table tr.listagemItem td:first-child, td.itemSelect {
+	width: 15px;
+	background-color: #B5CFDF
+}
+.listagem table tbody th {
+	border: 1px dotted #578CAF;
+	background-color: #E6EFF4;
+	color: #333;
+}
+
+.listagem table table {
+	margin: 5px 0;
+	width: auto;
+}
+
+.listagem table table caption {
+	border: none;
+	background: none;
+	margin: 0;
+	padding: 0
+}
+
+.listagem .listagemAcoesBarra {
+	position: absolute;
+	height: 32px;
+	overflow: hidden;
+	right: 0;
+}
+
+.listagem .listagemAcoesBarra div {
+	float: left;
+	margin-right: 10px;
+	line-height: 32px
+}
+.listagemAcoesBarra .DTTT_button {
+	width: 26px;
+	height: 26px;
+	border: 0px;
+	background-image: url('../images/interface/background/botoesTabela.png') !important;
+	overflow: hidden;
+	text-indent: 50px;
+	margin-left: 5px;
+	white-space: nowrap
+}
+
+.listagemAcoesBarra .DTTT_button_print {
+	background-position: 0 0;
+}
+.listagemAcoesBarra .DTTT_button_print_hover {
+	background-position: 0 -26px;
+}
+.listagemAcoesBarra .DTTT_button_copy {
+	background-position: -26px 0;
+}
+.listagemAcoesBarra .DTTT_button_copy_hover {
+	background-position: -26px -26px;
+}
+.listagemAcoesBarra .DTTT_button_pdf {
+    background-position: -52px 0;
+}
+.listagemAcoesBarra .DTTT_button_pdf_hover {
+    background-position: -52px -26px;
+}
+
+.listagemAcoesBarra .DTTT_button_xls {
+    background-position: -78px 0;
+}
+.listagemAcoesBarra .DTTT_button_xls_hover {
+    background-position: -78px -26px;
+}
+.listagemAcoesBarra .DTTT_button_csv {
+	background-position: -104px 0;
+}
+.listagemAcoesBarra .DTTT_button_csv_hover {
+	background-position: -104px -26px;
+}
+.listagemAcoesBarra .DTTT_button_chart {
+    background-position: -130px 0;
+}
+.listagemAcoesBarra .DTTT_button_chart_hover {
+    background-position: -130px -26px;
+}
+
+.listagemNavegacao {
+	margin-bottom: 5px;
+	background: url('../images/interface/background/tabBarra.png') top left repeat-x;
+	border: 1px solid #c3c3c3;
+	border-radius: 0 0 5px 5px;
+	height: 32px;
+	color: #193141;
+}
+
+/* Paginação */
+.listagemPaginacao {
+	text-align: right;
+	display: block !important;
+	display: table;
+	overflow: hidden;
+	float: right;
+	line-height: 32px
+}
+
+.listagemPaginacao div {
+	float: left;
+	margin-right: 10px
+}
+
+.listagemPaginacao li a, .listagemPaginacao li.nolink, .listagemPaginacao .paginate_button, .listagemPaginacao .paginate_active {
+	border: 1px solid #C3C3C3;
+	padding: 2px !important;
+	margin-right: 1px !important;
+}
+
+.listagemPaginacao .paginate_button:hover, .listagemPaginacao li a:hover {
+	border-color: #193141
+}
+
+.listagemPaginacao li a, .listagemPaginacao li.nolink, .listagemPaginacao .paginate_button {
+	background: url('../images/interface/background/botoes.png') no-repeat;
+	cursor: pointer
+}
+.listagemPaginacao li.current, .listagemPaginacao .paginate_active {
+	color: #fff;
+	background-color: #193141;
+	padding: 0 4px !important;
+}
+
+.listagemPaginacao .first, .listagemPaginacao .previous, .listagemPaginacao .next, .listagemPaginacao .last {
+	padding: 2px 4px;
+	font-weight: bold
+}
+
+.listagemPaginacao ul {
+	margin: 0 10px !important;
+	padding: 0 !important;
+	display: inline;
+	list-style-type: none;
+}
+
+.listagemPaginacao li {
+	display: inline;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.listagemPaginacao li a {
+	color: #193141;
+	text-decoration: none;
+	display: inline;
+}
+
+.listagemPaginacao li.nolink {
+	cursor: auto !important
+}
+
+.listagemAcoes {
+	padding: 0 10px 0 5px;
+	line-height: 32px;
+	position: absolute;
+	left: 1px;
+	bottom: 1px
+}
+
+.listagemAcoes label {
+	text-transform: lowercase;
+	margin: 0px !important;
+	display: inline !important;
+}
+.listagemAcoes label span {
+	font-size: 1.3em;
+	font-weight: bold;
+	width: auto !important;
+	border: none !important;
+}
+.listagemAcoes select {
+	font-size: .85em;
+	margin: 0px !important;
+	height: 22px;
+	padding: 1px
+}
+.listagemAcoes select option {
+	height: 20px;
+	line-height: 20px
+}
+.listagemAcoes input {
+	font-size: .85em !important;
+	margin: 0px !important
+}
+
+.listagemVazia {
+	text-align: left;
+	font-weight: bold;
+	color: #333;
+	padding: 15px 10px !important
+}
+
+p.listagemVazia {
+	background: #fff !important;
+	margin: 5px 0 !important;
+	border: 1px dotted #F3F3F3
+}
+
+/* ICONES */
+.listagemIco {
+	text-align: right
+}
+.listagemIco img {
+	border: none;
+}
+.listagemIco a {
+	padding: 0px;
+	margin-left: 3px;
+}
+.inline {
+	display: inline;
+	width: auto;
+}
+.pointer {
+	cursor: pointer;
+}
+/* TABS ******************************/
+div.tab {
+	margin: 2px 20px;
+	padding: 2px;
+	border: 1px solid #6E9EBC/*#E6EFF4*/;
+}
+form div.tab {
+	margin: 0;
+}
+.tab ul.navigation {
+	margin: 0 0 5px 0 !important;
+	padding: 0 !important;
+	display: table;
+	width: 100%;
+	background-color: #6E9EBC;
+}
+.tab ul.navigation li {
+	display: inline-block;
+	float: left;
+	margin: 8px 0 0 5px !important;
+	padding: 3px 10px !important;
+}
+
+.tab ul.navigation li {
+	background-color: #89b0ca;
+	border: 1px solid #5e8faf;
+	border-bottom: none;
+}
+.tab ul.navigation li a {
+	color: #fff;
+	text-decoration: none;
+}
+.tab ul.navigation li a:hover {
+	text-decoration: underline
+}
+.tab ul.navigation li.active {
+	color: #22577B;
+	background-color: #fff;
+	border: 1px solid #E6EFF4;
+	border-bottom: 1px solid #fff
+}
+.tab ul.navigation li.active a {
+	color: #22577B;
+	font-weight: bold
+}
+.tab ul.navigation li.disabled {
+	color: #476A7F;
+	background-color: #6E9EBC;
+	border: 1px solid #5e8faf;
+}
+
+.tab ul.navigation li.disabled, div.tabVertical ul.navigation li.disabled {
+	background-image: none !important;
+}
+
+.tab ul.navigation li.disabled, .tab ul.navigation li.disabled a, div.tabVertical ul.navigation li.disabled, div.tabVertical ul.navigation li.disabled a {
+	cursor: default;
+	text-decoration: none;
+}
+
+.tab div.tabContainer {
+	padding: 5px 10px;
+}
+
+div.tabVertical {
+	margin: 10px 0;
+	display: table;
+	width: 100%
+}
+
+div.tabVertical div.tabContainer {
+	display: block;
+	padding: 10px;
+}
+
+div.tabVertical ul.navigation {
+	width: 250px;
+	padding: 15px 0 50px 0 !important;
+	margin: 0 !important;
+	background-color: #fbfbfb
+}
+
+div.tabVertical ul.navigation li {
+	display: block;
+	float: none;
+	list-style: none;
+	padding: 10px 15px !important;
+	border-top: 1px solid #f4f4f4;
+}
+
+div.tabVertical ul.navigation li.disabled, div.tabVertical ul.navigation li.disabled:hover {
+	border-bottom: none !important;
+}
+
+div.tabVertical ul.navigation li:first-child {
+	border-top: none;
+}
+
+div.tabVertical ul.navigation li.active {
+	border-top: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	background-color: #fff
+}
+
+div.tabVertical ul.navigation li a {
+	color: #3486BF;
+}
+
+div.tabVertical ul.navigation li a:hover {
+	text-decoration: underline
+}
+
+div.tabVertical ul.navigation li.active a {
+	font-weight: bold;
+	cursor: default;
+	color: #3E779D
+}
+
+div.tabVertical ul.navigation li.disabled a {
+	color: #999
+}
+
+div.tabVertical div.tabContainer span.msgOrientacao, div.tabVertical div.tabContainer span.msgErro, div.tabVertical div.tabContainer .textCount {
+	clear: none
+}
+
+div.tabVertical ul.navigation li a, div.tabVertical ul.navigation li.active a, div.tabVertical ul.navigation li.disabled a {
+	text-decoration: none;
+}
+
+div.tabVertical div.tabContainer, div.tabVertical.left div.tabContainer {
+	margin-left: 260px;
+}
+
+div.tabVertical ul.navigation, div.tabVertical.left ul.navigation {
+	float: left;
+	border-right: 1px solid #d3d3d3;
+}
+
+div.tabVertical ul.navigation li, div.tabVertical.left ul.navigation li {
+	margin: 0 -1px 0 0 !important;
+}
+
+div.tabVertical ul.navigation li.active, div.tabVertical.left ul.navigation li.active {
+	background-color: #fff
+}
+
+div.tabVertical ul.navigation li.disabled, div.tabVertical ul.navigation li.disabled:hover, div.tabVertical.left ul.navigation li.disabled, div.tabVertical.left ul.navigation li.disabled:hover {
+	border-right: none !important;
+}
+
+div.tabVertical.right div.tabContainer {
+	margin-right: 260px;
+	margin-left: 0px;
+}
+div.tabVertical.right ul.navigation {
+	float: right;
+	border-left: 1px solid #d3d3d3;
+	border-right: none;
+}
+
+div.tabVertical.right ul.navigation li {
+	margin: 0 0 0 -1px !important;
+}
+
+div.tabVertical.right ul.navigation li.active {
+	background-color: #fff
+}
+
+div.tabVertical.right ul.navigation li.disabled, div.tabVertical.right ul.navigation li.disabled:hover {
+	border-left: none !important;
+}
+
+/* STEPS ******************************/
+ul.steps {
+	margin: 2px 20px;
+	padding: 0 !important;
+	height: 30px;
+	border-bottom: 2px solid #8fb3c9
+}
+form ul.steps {
+	margin: 0 0 10px 0 !important;
+}
+ul.steps li {
+	display: inline-block;
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden;
+	margin: 2px 0 !important;
+	padding: 0 15px 0 10px !important;
+	font-weight: bold;
+	color: #999;
+	background: #eeefef url('../images/interface/background/step_setas.png') no-repeat right -26px
+}
+ul.steps li:last-child {
+	background-position: right bottom;
+}
+ul.steps li a {
+	color: #999;
+	text-decoration: none;
+}
+ul.steps li a:hover {
+	text-decoration: underline
+}
+ul.steps li.active {
+	color: #6e9ab6;
+	background-position: right top;
+	padding-right: 25px !important;
+}
+ul.steps li a.active {
+	color: #6e9ab6;
+}
+ul.steps li.active:last-child {
+	background-position: right -52px;
+}
+/* ICO ******************************/
+.icons {
+	text-align: left !important;
+	width: 1%;
+	white-space: nowrap;
+}
+
+.icons a span {
+	display: none;
+	visibility: hidden;
+}
+
+.icoEditar:hover, .icoExcluir:hover, .icoAceitar:hover, .icoAdicionar:hover, .icoGrafico:hover, .icoImprimir:hover, .icoBloquear:hover, .icoDesbloquear:hover, .icoDownload:hover, .icoVisualizar:hover, .icoWord:hover, .icoExcel:hover, .icoOffice:hover, .icoPDF:hover, .icoErro:hover, .icoAjuda:hover, .icoPesquisar:hover, .icoCalendario:hover, .icoCalculadora:hover, .icoFonteMaior:hover, .icoFonteNormal:hover, .icoFonteMenor:hover, .icoAltoContraste:hover, .icoFundoBranco:hover, .icoFundoAzul:hover, .icoFundoAmarelo:hover, .icoFundoCinza:hover, .icoAssociar:hover, .icoDesassociar:hover, .icoSubir:hover, .icoDescer:hover, .icoValor:hover, .icoExcluirValor:hover, .icoEncaminhar:hover, .icoCancelar:hover, .icoReplicar:hover, .icoAtivar:hover, .icoEnviar:hover, .icoAssinar:hover, .icoHomologar:hover, .icoPendencias:hover, .icoAvaliar:hover, .icoEnviarHomologar:hover, .icoAlerta:hover, .icoEstorno:hover, .icoReceber:hover, .icoInicio:hover, .icoVoltar:hover, .icoAvancar:hover, .icoFim:hover, .icoTxt:hover, .icoImagem:hover, .icoAnexar:hover, .icoUserGroup:hover, .icoIncluirDocumento:hover, .icoCompactar:hover, .icoDocumentos:hover {
+	border: 1px solid #6E8EA3 !important;
+	cursor: pointer
+}
+
+.icoEditar, .icoExcluir, .icoAceitar, .icoAdicionar, .icoGrafico, .icoImprimir, .icoBloquear, .icoDesbloquear, .icoDownload, .icoVisualizar, .icoWord, .icoExcel, .icoOffice, .icoPDF, .icoErro, .icoAjuda, .icoPesquisar, .icoCalendario, .icoCalculadora, .icoFonteMaior, .icoFonteNormal, .icoFonteMenor, .icoAltoContraste, .icoFundoBranco, .icoFundoAzul, .icoFundoAmarelo, .icoFundoCinza, .icoAssociar, .icoDesassociar, .icoSubir, .icoDescer, .icoValor, .icoExcluirValor, .icoEncaminhar, .icoCancelar, .icoReplicar, .icoAtivar, .icoEnviar, .icoAssinar, .icoHomologar, .icoPendencias, .icoAvaliar, .icoEnviarHomologar, .icoAlerta, .icoEstorno, .icoReceber, .icoInicio, .icoVoltar, .icoAvancar, .icoFim, dl.accordion > dt span.icon, dl.accordion > dt.active span.icon, .icoTxt, .icoImagem, .icoAnexar, .icoUserGroup, .icoIncluirDocumento, .icoCompactar, .icoDocumentos {
+	background: url('../images/interface/icone/form/iconesNormal.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #fff;
+	text-indent: 50px;
+}
+.disabled {
+	background: url('../images/interface/icone/form/iconesDisabled.png') no-repeat;
+	border: 1px solid #fff;
+}
+.disabled:hover {
+	border: 1px solid #fff !important;
+	cursor: default;
+}
+/* Linha 01 ----------------------------------------------*/
+.icoEditar {
+	background-position: 0 0
+}
+.icoExcluir {
+	background-position: -20px 0
+}
+.icoAceitar {
+	background-position: -40px 0
+}
+.icoAdicionar {
+	background-position: -60px 0
+}
+.icoGrafico {
+	background-position: -80px 0
+}
+.icoImprimir {
+	background-position: -100px 0
+}
+.icoBloquear {
+	background-position: -120px 0
+}
+.icoDesbloquear {
+	background-position: -140px 0
+}
+.icoDownload {
+	background-position: -160px 0
+}
+.icoVisualizar {
+	background-position: -180px 0
+}
+.icoAssociar {
+	background-position: -200px 0
+}
+.icoDesassociar {
+	background-position: -220px 0
+}
+.icoSubir {
+	background-position: -240px 0
+}
+.icoDescer, dl.accordion > dt.active span.icon {
+	background-position: -260px 0
+}
+.icoValor {
+	background-position: -280px 0
+}
+.icoExcluirValor {
+	background-position: -300px 0
+}
+.icoEncaminhar {
+	background-position: -320px 0
+}
+.icoWord {
+	background-position: -340px 0;
+}
+.icoExcel {
+	background-position: -360px 0;
+}
+.icoOffice {
+	background-position: -380px 0;
+}
+.icoPDF {
+	background-position: -400px 0;
+}
+.icoErro {
+	background-position: -420px 0;
+}
+.icoAjuda {
+	background-position: -440px 0;
+}
+.icoPesquisar {
+	background-position: -460px 0;
+}
+.icoCalendario {
+	background-position: -480px 0;
+}
+.icoCalculadora {
+	background-position: -500px 0;
+}
+.icoInicio {
+	background-position: -520px 0;
+}
+.icoVoltar {
+	background-position: -540px 0;
+}
+.icoAvancar, dl.accordion > dt span.icon {
+	background-position: -560px 0;
+}
+.icoFim {
+	background-position: -580px 0;
+}
+.icoCancelar {
+	background-position: -758px 0;
+}
+.icoReplicar {
+	background-position: -780px 0;
+}
+.icoAtivar {
+	background-position: -800px 0;
+}
+.icoEnviar {
+	background-position: -820px 0;
+}
+.icoAssinar {
+	background-position: -840px 0;
+}
+.icoHomologar {
+	background-position: -860px 0;
+}
+.icoPendencias {
+	background-position: -880px 0;
+}
+.icoAvaliar {
+	background-position: -900px 0;
+}
+.icoEnviarHomologar {
+	background-position: -920px 0;
+}
+.icoAlerta {
+	background-position: -940px 0;
+}
+.icoEstorno {
+	background-position: -960px 0;
+}
+.icoReceber {
+	background-position: -980px 0;
+}
+
+.icoTxt {
+	background-position: -1000px 0;
+}
+.icoImagem {
+	background-position: -1020px 0;
+}
+.icoAnexar {
+	background-position: -1040px 0;
+}
+.icoUserGroup {
+	background-position: -1060px 0;
+}
+.icoIncluirDocumento{
+    background-position: -1080px 0;
+}
+.icoCompactar{
+    background-position: -1100px 0;
+}
+
+.icoDocumentos{
+    background-position: -1120px 0;
+}
+
+/* Linha 03 ---------------------------------------------
+ .icoInicio {
+ background-position:-520px 0;
+ }
+ .icoAjuda {
+ background-position:-540px 0;
+ }
+ .icoFonteMaior {
+ background-position:-560px 0;
+ }
+ .icoFonteNormal {
+ background-position:-580px 0;
+ }
+ .icoFonteMenor {
+ background-position:-600px 0;
+ }
+ .icoAltoContraste {
+ background-position:-620px 0;
+ }
+ .icoFundoBranco {
+ background-position:-640px 0;
+ }
+ .icoFundoAzul {
+ background-position:-660px 0;
+ }
+ .icoFundoAmarelo {
+ background-position:-680px 0;
+ }
+ .icoFundoCinza {
+ background-position:-700px 0;
+ }
+ /* Listagem com inclusão ******************************/
+.listagemDados {
+	margin-bottom: 0px !important;
+	border-top: none !important;
+	border-left: 1px dotted #578CAF !important;
+	border-right: 1px dotted #578CAF !important;
+	border-bottom: 2px solid #578CAF !important;
+	background-color: #FFFFFF;
+	padding: 5px 10px;
+}
+
+.listagemDados h3 {
+	background-color: #81a9c3;
+	color: #fff !important;
+	font-size: 1em !important;
+	padding: 5px 10px;
+	margin-bottom: 10px !important;
+}
+
+div.listagem div.barraBtsAcoes {
+	margin-top: 0px;
+	border: none
+}
+
+#conteudo label.inLine {
+	display: inline
+}
+
+#conteudo fieldset.campoRequerido legend {
+	padding-left: 15px;
+	width: 135px !important;
+	background: url('../images/interface/background/campoRequerido.png') top left no-repeat;
+}
+
+/*COMPONENTE DE MODAL*/
+.modal {
+	font-size: 12px;
+	min-width: 492px;
+	border: solid 1px #a3a3a3;
+	padding: 5px !important;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.modal ui-dialog-titlebar {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #fff;
+	text-align: left;
+	margin: 0 0 5px 0;
+	padding: 5px 10px;
+}
+
+/* COMPONENTE MODAL -> MENSAGENS */
+.ui-dialog.confirm, .ui-dialog.confirm .ui-widget-content, .ui-dialog.alert, .ui-dialog.alert .ui-widget-content, .ui-dialog.error, .ui-dialog.error .ui-widget-content {
+	background: #f3f3f3
+}
+
+.ui-dialog.modal, .ui-dialog.modal .ui-widget-content {
+	background: #fff
+}
+
+.ui-dialog.confirm .ui-dialog-titlebar, .ui-dialog.alert .ui-dialog-titlebar, .ui-dialog.error .ui-dialog-titlebar {
+	border: 0
+}
+
+.ui-dialog.confirm .ui-dialog-titlebar, .ui-dialog.alert .ui-dialog-titlebar {
+	background: #eba228 !important;
+}
+
+.ui-dialog.error .ui-dialog-titlebar {
+	background: #9E1D24 !important;
+}
+
+.ui-dialog.alert .ui-dialog-content, .ui-dialog.confirm .ui-dialog-content, .ui-dialog.error  .ui-dialog-content {
+	margin: 10px;
+	padding: 5px 0 0 50px
+}
+
+.ui-dialog.alert .ui-dialog-content, .ui-dialog.confirm .ui-dialog-content {
+	background: url('../images/alert/alert.gif') top left no-repeat;
+}
+
+.ui-dialog.error  .ui-dialog-content {
+	background: url('../images/alert/erro.gif') top left no-repeat;
+}
+
+#popup_ok, #popup_confirm, #popup_cancel {
+	background-image: url('../images/interface/background/botoes.png');
+	padding-left: 25px !important;
+	background-repeat: no-repeat;
+}
+
+#popup_confirm, #popup_ok {
+	background-position: 0px -20px !important;
+}
+#popup_cancel {
+	background-position: 0px -60px !important;
+}
+
+/* COMPONENTE DE MODAL -> FORMULARIOS */
+.ui-dialog .modal {
+	background: #fff
+}
+
+.modal .ui-dialog-titlebar {
+	background: #22577B;
+	border: 0
+}
+
+.modal .ui-dialog-content h2 {
+	font-size: 1.2em;
+	line-height: 20px;
+}
+
+.modal div.msgOrientacao, .modal div.msgErro, .modal div.msgAlerta, .modal div.msgSucesso {
+	margin-bottom: 10px;
+	padding: 2px 10px 5px 30px;
+}
+
+.ui-dialog-content p {
+	color: #333333 !important;
+	margin: 0 !important;
+	padding: 0 !important
+}
+
+.modal div.msgOrientacao {
+	background: url('../images/interface/icone/message/msgOrientacao_20x20.png') no-repeat 5px 2px #f9f9f9;
+	border: 1px solid #3CB4C3;
+}
+.modal div.msgOrientacao h2 {
+	color: #3CB4C3 !important
+}
+
+.modal div.msgSucesso {
+	background: url('../images/interface/icone/message/msgSucesso_20x20.png') no-repeat 5px 2px #eff7e0;
+	border: 1px solid #408C2E;
+}
+
+.modal div.msgSucesso h2 {
+	color: #408C2E !important;
+}
+
+.modal div.msgAlerta {
+	background: url('../images/interface/icone/message/msgAlerta_20x20.png') no-repeat 5px 2px #fff6d8;
+	border: 1px solid #E77917;
+}
+.modal div.msgAlerta h2 {
+	color: #E77917 !important;
+}
+
+.modal div.msgErro {
+	background: url('../images/interface/icone/message/msgErro_20x20.png') no-repeat 5px 2px #fff2f2;
+	border: 1px solid #BF231B;
+}
+.modal div.msgErro h2 {
+	color: #BF231B !important;
+}
+
+.modal div.barraBtsAcoes {
+	margin: 10px 0 0 0;
+}
+
+/* Formatação para campos com mascara */
+input.cpf {
+	width: 7em
+}
+input.cnpj {
+	width: 9em
+}
+input.fone {
+	width: 7em
+}
+input.date {
+	width: 5em
+}
+input.time {
+	width: 4em
+}
+input.decimal {
+	width: 9em
+}
+input.signed-decimal {
+	width: 9em
+}
+input.decimal6 {
+	width: 3.5em
+}
+input.decimal10 {
+	width: 5.3em
+}
+input.inteiro {
+	text-align: right;
+}
+
+/* Accordion ******************************/
+
+dl.accordion {
+	padding: 2px;
+}
+
+dl.accordion > dt {
+	background: url("../images/interface/background/fundoCabecalhoTitulo.png") repeat-x scroll left center transparent;
+	padding: 10px 5px 10px 30px;
+	margin: 2px;
+	border-radius: 2px;
+	position: relative;
+	border: 1px solid #d3d3d3
+}
+
+dl.accordion > dt:hover {
+	background-color: #A8C5D7;
+	cursor: pointer
+}
+
+dl.accordion > dt.active:hover {
+	cursor: default;
+}
+
+dl.accordion > dt span.icon {
+	position: absolute;
+}
+
+dl.accordion > dt span.icon, dl.accordion > dt span.icon:hover {
+	border: none !important
+}
+
+dl.accordion > dt span.icon {
+	top: 8px;
+	left: 8px;
+}
+
+dl.accordion > dt.active span.icon {
+	top: 9px;
+	left: 7px;
+}
+
+dl.accordion > dt span.info {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-weight: normal;
+	border-left: 1px dotted #666;
+	padding: 5px 0 5px 10px;
+}
+
+dl.accordion > dd {
+	display: none;
+	border: 1px solid #d3d3d3;
+	padding: 10px;
+	margin: -2px 2px 0 2px !important;
+}
+
+/* checkboxTree ******************************/
+ul.checkboxTree {
+	font-size: inherit;
+	padding: 10px 20px 10px 10px !important;
+	border: 1px solid #f4f4f4;
+	display: table
+}
+
+ul.checkboxTree li {
+	list-style: none;
+	font-size: inherit
+}
+
+ul.checkboxTree li span.ui-icon{
+	float: left;
+	width: 16px !important;
+	cursor: default
+}
+
+ul.checkboxTree li input{
+	margin-right: 5px
+}
+
+ul.checkboxTree li label{
+	cursor:pointer;
+	display: inline-block !important;
+}
+
+ul.checkboxTree > li{
+	margin-left: 0 !important;
+	padding-left: 0 !important
+}

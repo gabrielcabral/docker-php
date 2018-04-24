@@ -1,0 +1,83 @@
+<div id='preLoader'></div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+<script type="text/javascript">
+    var baseUrl = '<?php echo $this->baseUrl(); ?>';
+
+    $(document).ready(function () {
+        if ($("#SG_REGIAO").val() != null && $("#SG_REGIAO").val() != '') {
+            $.ajax({
+                url: baseUrl
+                + '/index.php/manutencao/quantidadeturma/seleciona-regiao/v/' + $("#v").val() + '/REGIAO/' + $("#SG_REGIAO").val() + '/NU_SEQ_CONFIGURACAO/' + $("#NU_SEQ_CONFIGURACAO").val(),
+
+                data: {
+                    REGIAO: $("#SG_REGIAO").val(),
+                    NU_SEQ_CONFIGURACAO: $("#NU_SEQ_CONFIGURACAO").val(),
+                    v: $("#v").val(),
+                },
+
+                success: function (data) {
+                    var find = $(data).find('#loginBase #login').html();
+                    if (find != null && find != '') {
+                        location.href = baseUrl + '/index.php';
+                        return;
+                    }
+
+                    var label = $("label[for=gridQuantidadeTurmas]");
+                    var labelHTML = $(data).find("label[for=gridQuantidadeTurmas]");
+                    label.html(labelHTML.html());
+
+                    initialize();
+
+                }
+            });
+        }
+
+    });
+
+
+</script>
+<style type="text/css">
+    .btnPesquisar {
+        margin-left: 240px;
+        position: absolute;
+
+    }
+
+    #form span {
+        width: 140px !important;
+    }
+
+    #form span.campoRequerido {
+        width: 125px !important;
+    }
+</style>
+
+<div class="tab">
+    <ul class="navigation">
+        <li><a href="<?php
+
+            if ($this->form->getElement('v')->getValue()) {
+                echo $this->baseUrl() . '/index.php/manutencao/configuracao/visualizar-configuracao/v/1/NU_SEQ_CONFIGURACAO/'
+                    . $this->form->getElement('NU_SEQ_CONFIGURACAO')->getValue();
+            } else {
+                echo $this->baseUrl() . '/index.php/manutencao/configuracao/form/NU_SEQ_CONFIGURACAO/'
+                    . $this->form->getElement('NU_SEQ_CONFIGURACAO')->getValue();
+            }
+
+            ?>">Dados Gerais</a></li>
+        <li class="active"><a href="#dadosMesoregiao">Mesorregi&atilde;o</a></li>
+    </ul>
+
+
+    <div id="dadosMesoregiao" class="tela">
+        <?php
+        echo $this->form;
+        ?>
+        <form>
+            <div class="notas">Campos obrigatórios</div>
+        </form>
+        <div class="result"></div>
+    </div>
+
+</div>
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.mesoregiao.js" type="text/javascript"></script>

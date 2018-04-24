@@ -1,0 +1,119 @@
+/* Correcao do posicionamento da legenda*/
+
+#conteudo fieldset.agrupador label, #popup_container fieldset.agrupador label {
+	margin-left:0 !important;
+}
+#conteudo fieldset.agrupador span.msgOrientacao, #conteudo fieldset.agrupador span.msgErro, #popup_container fieldset.agrupador span.msgOrientacao, #popup_container fieldset.agrupador span.msgErro {
+	margin-left:0 !important
+}
+/* Label longos */
+#conteudo form.labelLongo fieldset.agrupador {
+	padding-left:255px !important;
+}
+#conteudo form.labelLongo fieldset.agrupador label {
+	margin-left:0px !important;
+}
+/* Botoes - Margem interna
+.btnConfirmar, .btnCancelar, .btnAdicionar, .btnExcluir, .btnPesquisar, .btnAnterior, .btnImprimir, .btnGerarPDF {
+	padding:0 0 0 15px !important
+}
+.btnGerarPlanilha {
+	padding:0 0 0 10px !important
+}
+.btnProximo {
+	padding:0 15px 0 0 !important
+}
+button {
+	background:url(../images/interface/background/botoes.png) repeat-x top left;
+	margin-left:5px;
+	cursor:pointer;
+	line-height:18px;
+}*/
+/* STEPS ******************************/
+ul.steps {
+	background:url(../images/interface/background/step_ie.png) repeat-x top left;
+}
+/* Listagem - Tabela */
+.listagem table tr td {
+	border-bottom:1px solid #578CAF;
+	border-left:1px solid #578CAF;
+}
+.listagem table tbody th {
+	border:1px solid #578CAF;
+}
+.campoRequerido, #conteudo fieldset.campoRequerido legend, #popup_container fieldset.campoRequerido legend {
+	background-image:url(../images/interface/icone/form/campoRequerido.gif) !important;
+}
+.notas {
+	background-image:url(../images/interface/icone/form/campoRequerido.gif) !important;
+}
+#header #infoUsuario ul li ul li {
+	margin:0 !important;
+}
+#header #infoUsuario ul li ul li ul {
+	border:1px solid #fff
+}
+/* MODAL ******************************/
+div.confirm, div.alert, div.error {
+	background-color:#f3f3f3 !important;
+}
+.modal {
+	background-color:#fff !important
+}
+#popup_container div.alert, #popup_container div.confirm {
+	margin:10px;
+	background: url(../images/alert/alert.gif) top left no-repeat;
+}
+#popup_container div.error {
+	margin:10px;
+	background: url(../images/alert/erro.gif) top left no-repeat;
+}
+#popup_button_close {
+	text-align:center;
+	padding:0 4px;
+}
+#popup_ok, #popup_confirm, #popup_cancel {
+	text-align:left;
+}
+/* Icones com fundo branco*/
+.icoEditar, .icoExcluir, .icoAceitar, .icoAdicionar, .icoGrafico, .icoImprimir, .icoBloquear, .icoDesbloquear, .icoDownload, .icoVisualizar, .icoWord, .icoExcel, .icoOffice, .icoPDF, .icoErro, .icoAjuda, .icoPesquisar, .icoCalendario, .icoCalculadora, .icoFonteMaior, .icoFonteNormal, .icoFonteMenor, .icoAltoContraste, .icoFundoBranco, .icoFundoAzul, .icoFundoAmarelo, .icoFundoCinza, .icoAssociar, .icoDesassociar, .icoSubir, .icoDescer, .icoValor, .icoExcluirValor, .icoEncaminhar ,.icoAlerta,.icoEstorno,.icoReceber, .icoTxt, .icoImagem, .icoAnexar, .icoUserGroup {
+	background-image:url(../images/interface/icone/form/iconesNormal.gif) !important;
+}
+.disabled {
+	background-image:url(../images/interface/icone/form/iconesDisabled.gif) !important;
+}
+
+/* Menu --------------------------------------*/
+/*
+div.menu{
+    height: 40px;
+    display: table;
+    width: 100%}
+*/
+
+div.menu > ul {
+    margin:0;
+    padding: 16px 0 0 20px;
+    height:24px !important;
+    overflow: hidden;
+}
+
+div.menu > ul li a{
+    padding-top: 4px;
+    display: block;}
+
+#menuAux #infoUsuario{
+    float: left
+}
+
+#infoUsuarioNome{
+    margin: 5px 0 0 0 ;
+}
+
+#infoUsuarioSessao{
+    display: inline
+}
+
+#conteudo fieldset.agrupador legend,
+#popup_container fieldset.agrupador legend {
+    left: 0 !important; }

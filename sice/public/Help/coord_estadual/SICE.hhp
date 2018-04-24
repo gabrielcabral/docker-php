@@ -1,0 +1,62 @@
+[OPTIONS]
+Compiled File=SICE.chm
+Title=SICE
+Contents File=SICE.hhc
+Index File=SICE.hhk
+Default topic=
+Default Window=
+Error log file=
+Display compile progress=No
+Display compile notes=No
+Full-text search=Yes
+Binary Index=Yes
+Auto Index=No
+Enhanced decompilation=No
+Binary TOC=No
+Flat=No
+
+[WINDOWS]
+
+[FILES]
+2._Perfis_de_Acesso.htm
+1.2_Alterar_senha.htm
+1.1_Liberar_senha.htm
+2.5.1_Cadastrar_Usuário.htm
+2.5.2_Pesquisar_Usuário.htm
+2.5.3_Visualizar_Usuário.htm
+3.1.10_Visualizar_Histórico.htm
+3.1.3_Visualizar_Turma.htm
+3.1.4_Editar_Turma.htm
+3.1.2_Pesquisar_Turma.htm
+2.5.7_Visualizar_Histórico_Bolsista.htm
+2.5.6_Ativar___Inativar_Usuário.htm
+2.5.4_Editar_Usuário.htm
+2.5.5_Excluir_Usuário.htm
+3.2.2_Visualizar_Avaliação_Pedagógica.htm
+5.1_Emitir_Relatório.htm
+1._Menu_do_Sistema.htm
+4._Login_de_Acesso.htm
+3._Acesso_Público.htm
+1._Apresentação.htm
+4.1.4_Verificar_Pendencias.htm
+4.1.1_Pesquisar_Bolsista.htm
+4.1.2_Avaliar_Bolsista.htm
+4.1.3_Solicitar_Homologação.htm
+3.3.2_Emitir_Certificado.htm
+3.2.1_Pesquisar_Avaliacao_Pedagogica.htm
+1.1_Estrutura_do_Menu.htm
+eHelp.xml
+RoboHHRE.lng
+
+SICE.glo
+SICE.brs
+[ALIAS]
+#include SICE.ali
+
+[MAP]
+#include BSSCDefault.h
+
+[TEXT POPUPS]
+BSSCDefault.h
+
+

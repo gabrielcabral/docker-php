@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR">
+    <head>
+        <?php
+        //habilita o jquery
+        //$this->jQuery()->enable();
+        //$this->jQuery()->uiEnable();
+
+        
+        echo "        
+        {$this->headMeta()}
+        {$this->headTitle()}
+";
+        $auth = Zend_Auth::getInstance();
+        $menu = null;
+
+        if ($this->actionMenu && is_array($this->actionMenu)) {
+            $menuActions = $this->contextMenu($this->actionMenu);
+        }else{
+            $menuActions = '';
+        }
+
+        $message = $this->message((array) $this->message);
+
+        $options = Zend_Registry::get('config');
+        if($auth->hasIdentity()){
+            $timeoutJs = "oFnde.timerSection('".Zend_Session::getOptions('gc_maxlifetime')."');";
+        }else{
+            $timeoutJs = '';
+        }
+   
+        if ($auth->hasIdentity() or !($options['security']['enabled'])) {
+            $menu = $this->navigation()->menu()->setUlClass('menu') . "
+                    <script type=\"text/javascript\"> 
+                        jQuery(document).ready(function() { 
+                            //Removendo a classe active ao carregar a página para não permanecer com o menu aberto
+                            jQuery('ul.menu').find('li').removeClass('active');".
+                            $timeoutJs
+                        ."});
+                    </script>";
+            
+        }
+        
+        ?>
+	<link type="image/x-icon" rel="shortcut icon" href="/static/images/interface/icone/favicon.ico" />	
+        <?php echo $this->headLink() ?>
+        <?php echo $this->headStyle() ?>
+        <!--[if lt IE 8]>
+        <link type="text/css" href="/static/css/ie-fix.css" rel="stylesheet" />
+        <![endif]-->
+		<?php //echo $this->jQuery(); ?>		
+        <?php echo $this->headScript() ?>
+    </head>
+    <body>
+        <div id="preLoader"></div>
+        <div id="header">
+            <img id="logoFnde" src="/static/images/logo/fnde_web.png" alt="FNDE - Fundo Nacional de Desenvolvimento da Educação" />
+            <img id="logoSistema" src="/static/images/logo/<?php
+                /** 
+                 * @todo anunciar o ajustes do app.logo 
+                 */
+                echo ( isset($options['app']['logo'])? $options['app']['logo'] : strtolower($options['app']['name']) . "_web.png" )
+            ?>" alt="<?php echo strtoupper($options['app']['name']) ?> - <?php echo $options['app']['description'] ?>" />
+            <?php echo $this->userInfo(); ?>
+        </div>
+
+        <?php echo $menu; ?>
+
+        <div id="conteudo">
+            <?php
+                echo $this->layoutHeader($this->title, $this->subtitle)
+                   . $menuActions
+                   . $message
+                   . $this->layout()->content . PHP_EOL;
+            ?>
+        </div>
+        <div id="footer" style="display:none">
+            Powered by <?php echo $options['app']['powered'] ?>
+        </div>
+        <?php if ($options['piwik']['appid']):
+            $user = $auth->hasIdentity() ? $auth->getIdentity()->username : 'VISITANTE';
+        ?>
+
+            <script type="text/javascript">
+                var _paq = _paq || [];
+                _paq.push(["trackPageView"]);
+                _paq.push(["enableLinkTracking"]);
+
+                (function () {
+                    var u = (("https:" == document.location.protocol) ? "https" : "http") + "://estatisticas.fnde.gov.br/";
+                    _paq.push(["setTrackerUrl", u + "piwik.php"]);
+                    _paq.push(["setSiteId", "<?php echo $options['piwik']['appid']; ?>"]);
+                    _paq.push(["setCustomVariable", 1, "Usuario", "<?php echo $user; ?>", "visit"]);
+                    var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0];
+                    g.type = "text/javascript";
+                    g.defer = true;
+                    g.async = true;
+                    g.src = u + "piwik.js";
+                    s.parentNode.insertBefore(g, s);
+                })();
+            </script>
+        <?php endif; ?>
+    </body>
+</html>

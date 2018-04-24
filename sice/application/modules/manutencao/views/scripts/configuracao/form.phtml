@@ -1,0 +1,82 @@
+<div id='preLoader'></div>
+<script type="text/javascript">var baseUrl = '<?php echo $this->baseUrl(); ?>';</script>
+<style type="text/css">
+.btnPesquisar {
+	margin-left: 240px;
+	position: absolute;
+}
+
+#form span {
+	width: 140px !important;
+}
+
+#form span.campoRequerido {
+	width: 125px !important;
+}
+</style>
+<div class="tab">
+	<ul class="navigation">
+		<li class="active"><a href="#dadosBasicos">Dados Gerais</a></li>
+		<li><a
+			href="
+			<?php
+if ( $this->seq_config && $this->form->getElement('v')->getValue() ) {
+	echo $this->baseUrl() . '/index.php/manutencao/quantidadeturma/visualizar-quantidade/v/1/NU_SEQ_CONFIGURACAO/'
+			. $this->nu_seq_conf;
+} else {
+	echo $this->baseUrl() . '/index.php/manutencao/quantidadeturma/visualizar-quantidade/v/1/NU_SEQ_CONFIGURACAO/'
+			. $this->nu_seq_conf;
+}
+
+			?>">Mesorregi&atilde;o</a>
+
+
+		</li>
+	</ul>
+
+	<div id="dadosBasicos" class="tela">
+		<?php
+echo $this->form;
+		?>
+
+	</div>
+	<form>
+		<div class="notas">Campos obrigatórios</div>
+	</form>
+	<div id="dadosMesoregiao" class="tabContainer"></div>
+</div>
+<script	src="<?php echo $this->baseUrl(); ?>/js/manutencao.configuracao.js"	type="text/javascript"></script>
+<script>
+
+	$("input[name='DT_TERMINO_NOVA_CONFIG']").setMask({mask:"39/19/2999",autoTab:false});
+
+	var mask = {
+		money: function() {
+			var el = this
+				,exec = function(v) {
+				v = v.replace(/\D/g,"");
+				v = new String(Number(v));
+				var len = v.length;
+				if (1== len)
+					v = v.replace(/(\d)/,"0,0$1");
+				else if (2 == len)
+					v = v.replace(/(\d)/,"0,$1");
+				else if (len > 2) {
+					v = v.replace(/(\d{2})$/,',$1');
+				}
+				return v;
+			};
+
+			setTimeout(function(){
+				el.value = exec(el.value);
+			},1);
+		}
+
+	}
+
+	$(function(){
+		$('.valor').bind('keypress',mask.money)
+	});
+
+</script>
+

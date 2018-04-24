@@ -1,0 +1,19 @@
+<?php
+echo $this->form;
+?>
+<script>
+	$("input.decimal4").setMask({
+		mask:"99,9",
+		type:"reverse",
+		defaultValue:""
+	});
+</script>
+<script src="<?php echo $this->baseUrl(); ?>/js/secretaria.finalizar.turma.js"  type="text/javascript"></script>
+<style type="text/css">
+	input.decimal4{
+		width:2.5em;
+	}
+    input.decimal3{
+        width:2.5em;
+    }
+</style>

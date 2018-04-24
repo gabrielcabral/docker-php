@@ -1,0 +1,45 @@
+<form method="get"
+      action="<?php echo $this->Url(array('action' => 'list', 'controller' => 'emitircertificado', 'module' => 'secretaria'), null, true) ?>">
+    <fieldset id="fieldset-dadoscurso">
+        <legend>Dados</legend>
+
+        <label for="NU_CPF"><span>CPF: </span>
+            <?php echo $this->tutor['NU_CPF'] ?>
+
+        </label>
+        <label for="NO_USUARIO"><span>Nome: </span>
+            <?php echo $this->tutor['NO_USUARIO'] ?>
+        </label>
+        <label for="DS_NOME_CURSO"><span>Curso: </span>
+            <?php echo $this->tutor['DS_NOME_CURSO'] ?>
+        </label>
+
+    </fieldset>
+    <div id="divBotoes" class="barraBtsAcoes">
+        <button name="voltar" id="btnCancelar" type="submit" value="Voltar" class="btnCancelar" title="Voltar">
+            Voltar
+        </button>
+    </div>
+</form>
+<?php
+$rowAction = array(
+    'certificado_tutor' => array('label' => 'Emitir Certificado',
+        'url' => $this->Url(array('action' => 'gerar-para-tutor', 'controller' => 'emitircertificado', 'module' => 'secretaria'), null, true)
+            . '/NU_SEQ_USUARIO/%s/NU_SEQ_TURMA/%s', 'params' => array('NU_SEQ_USUARIO', 'NU_SEQ_TURMA'),
+        'attribs' => array('class' => 'icoDownload', 'title' => 'Emitir Certificado', 'target' => "_blank"))
+);
+
+$arrHeader = array('<center>Turma</center>', '<center>Data início</center>', '<center>Data fim</center>', '<center>Data finalização</center>');
+
+$grid = new Fnde_View_Helper_DataTables();
+$grid->setId('NU_SEQ_USUARIO_NU_SEQ_TURMA');
+$grid->setColumnsHidden(array('NU_SEQ_USUARIO_NU_SEQ_TURMA', 'NU_SEQ_CURSO', 'NU_SEQ_USUARIO'));
+$grid->setHeaderActive(false);
+$grid->setAutoCallJs(true);
+$grid->setActionColumn("<center>Ações</center>");
+$grid->setTitle('Listagem de turmas');
+$grid->setData($this->turmas)
+    ->setHeader($arrHeader)
+    ->setRowAction($rowAction)
+    ->setTableAttribs(array('id' => 'tbTutor'));
+echo $grid;

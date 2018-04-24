@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<tocdata>
+<book name=" Informações Gerais" >
+  <item name="1. Apresentação" url="Apresenta__o.htm" />
+  <item name="2. Perfis de Acesso" url="2._Perfis_de_Acesso.htm" />
+  <item name="3. Acesso Público" url="1._Acesso_P_blico.htm" />
+  <item name="4. Login de Acesso" url="2._Login_de_Acesso.htm" />
+</book>
+<book name="Acesso ao Sistema" >
+  <item name="1. Menu do Sistema" url="3._Menu_do_Sistema.htm" />
+  <item name="1.1 Estrutura do Menu" url="3.1Estrutura_do_Menu_.htm" />
+</book>
+<book name="Funcionalidades do Sistema" >
+  <book name="1. Acesso" >
+    <item name="1.1 Liberar senha" url="1.1_Liberar_senha.htm" />
+    <item name="1.2 Alterar senha" url="1.2_Alterar_senha.htm" />
+  </book>
+  <book name="2. Manutenção" >
+    <book name="2.1 Usuários" >
+      <item name="2.1.1 Cadastrar Usuário" url="2.5.1_Cadastrar_Usu_rio.htm" />
+      <item name="2.1.2 Pesquisar Usuário" url="2.5.2_Pesquisar_Usu_rio.htm" />
+      <item name="2.1.3 Visualizar Usuário" url="2.5.3_Visualizar_Usu_rio.htm" />
+      <item name="2.1.4 Editar Usuário" url="2.5.4_Editar_Usu_rio.htm" />
+      <item name="2.1.5 Excluir Usuário" url="2.5.5_Excluir_Usu_rio.htm" />
+      <item name="2.1.6 Ativa / Desativa Usuário" url="2.5.6_Ativar___Inativar_Usu_rio.htm" />
+      <item name="2.1.7 Visualizar Histórico Bolsista" url="2.5.7_Visualizar_Hist_rico_Bolsista.htm" />
+    </book>
+  </book>
+  <book name="3. Secretaria" >
+    <book name="3.1 Turmas" >
+      <item name="3.1.1 Pesquisar Turma" url="3.1.2_Pesquisar_Turma.htm" />
+      <item name="3.1.2 Visualizar Turma" url="3.1.3_Visualizar_Turma.htm" />
+      <item name="3.1.3 Visualizar Histórico" url="3.1.10_Visualizar_Hist_rico.htm" />
+    </book>
+    <book name="3.2 Avaliação Pedagógica" >
+      <item name="3.2.1 Pesquisar Avaliação Pedagógica" url="3.2.1_Pesquisar_Avalia__o_Pedag_gica.htm" />
+      <item name="3.2.2 Visualizar Avaliação Pedagógica" url="3.2.2_Visualizar_Avalia__o_Pedag_gica.htm" />
+    </book>
+    <book name="3.3 Emitir Certificado" >
+      <item name="3.3.1 Emitir Certificado" url="3.2.5_Emitir_Certificado.htm" />
+    </book>
+  </book>
+  <book name="4. Relatórios" >
+    <book name="4.1 Emitir Relatórios" >
+      <item name="4.1.1 Emitir Relatórios" url="4.1_Emitir_Relat_rios.htm" />
+    </book>
+  </book>
+</book>
+
+</tocdata>

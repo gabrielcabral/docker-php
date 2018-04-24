@@ -1,0 +1,205 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+/* FIM :: Elementos textuais */
+#popup_container form label{
+    display:block;
+    margin-bottom:6px;
+}
+
+#popup_container label span {
+    display:inline-block;
+    border-bottom:1px dotted #dedede;
+    cursor:pointer;
+    vertical-align:top}
+
+#popup_container label span.campoRequerido {
+    padding-left:15px;}
+
+#popup_container label.longo span:first-child {
+    display:block !important;
+    width:auto;
+    margin-bottom:2px;}
+
+/*Agrupador*/
+#popup_container fieldset {
+    padding:10px;
+    border:1px dotted #999;
+    margin-bottom:6px;}
+
+#popup_container fieldset legend {
+    color:#578CAF;
+    font-weight:bold;
+    font-size:1em;
+    background-color:#fff}
+
+#popup_container fieldset.agrupador {
+    display:table;
+    padding:0;
+    border:0;
+    position: relative;}
+
+#popup_container fieldset.agrupador legend {
+    display:block;
+    border-bottom:1px dotted #dedede;
+    color:#333;
+    font-weight:normal;
+    position: absolute;
+    left: 0; 
+    top: 1px;
+}
+
+#popup_container fieldset.agrupador input{
+    /*margin-right:5px;*/}
+
+#popup_container fieldset.inLine label {
+    margin-left:1px !important;
+    margin-right:10px;
+    display:inline !important;}
+
+#popup_container fieldset.inLine label span{
+    display:inline !important;
+    width:auto !important;
+    border:0;}
+
+#popup_container fieldset.inLine label span.msgErro{
+    margin:0 !important;}
+
+#popup_container label.inLine{
+    display:inline}
+
+#popup_container fieldset.campoRequerido legend{
+    padding-left:15px;
+    background:url(../images/interface/background/campoRequerido.png) top left no-repeat;}
+
+/* Comprimento dos label - Padrão */
+#popup_container label span, #popup_container fieldset.agrupador legend {
+    width:150px;}
+
+#popup_container label span.campoRequerido,
+#popup_container fieldset.campoRequerido legend {
+    width:135px;}
+
+#popup_container fieldset.agrupador{
+    padding-left: 155px;}
+
+
+/*COMPONENTE DE MODAL*/
+#popup_container {
+    font-size: 12px;
+    min-width: 492px;
+    border: solid 1px #a3a3a3;
+    padding:5px !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;}
+
+#popup_container h1#popup_title{
+    font-size:1.4em;
+    font-weight: bold;
+    color:#fff;
+    text-align:left;
+    margin:0 0 5px 0;
+    padding:5px 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    cursor: default;}
+
+#popup_button_close {
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    right:9px;
+    border:1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-weight:bold;
+    color:#ccc;
+    background-image:none !important;}
+
+#popup_panel{
+    text-align: right;
+    padding-top:5px;
+    border-top: 1px solid #919191;}
+
+/* COMPONENTE MODAL -> MENSAGENS */
+div#popup_container.confirm, 
+div#popup_container.alert,
+div#popup_container.error{background-color:#f3f3f3 !important;}
+
+#popup_container.modal{background-color:#fff}
+
+#popup_container.confirm h1#popup_title, 
+#popup_container.alert h1#popup_title {background-color: #eba228 !important;}
+
+#popup_container.error h1#popup_title {background-color: #9E1D24 !important;}
+
+#popup_content.alert, #popup_content.confirm {
+    margin:10px;
+    background: url(../images/alert/alert.gif) top left no-repeat;}
+
+#popup_content.error {
+    margin:10px;
+    background: url(../images/alert/erro.gif) top left no-repeat;}
+
+#popup_container.confirm #popup_message, 
+#popup_container.alert #popup_message,
+#popup_container.error #popup_message {
+    padding: 5px 0 0 50px;
+    margin-bottom:40px;}
+
+#popup_ok, #popup_confirm, #popup_cancel {
+    background-image:url(../images/interface/background/botoes.png);
+    padding-left:25px !important;
+    background-repeat:no-repeat;}
+
+#popup_confirm , #popup_ok{	background-position:0px -20px !important;}
+#popup_cancel {background-position:0px -60px !important;}
+
+/* COMPONENTE DE MODAL -> FORMULARIOS */
+#popup_container.modal{background-color:#fff}
+
+#popup_container.modal #popup_content{padding:0px 5px; border: none}
+
+#popup_container.modal h1#popup_title{background-color:#22577B;}
+
+#popup_container.modal #popup_content div.barraBtsAcoes{
+    margin:10px 0 0 0 !important;
+    margin:4px 0 0 0 !important;}
+
+#popup_container.modal #popup_content #popup_message{margin:0 0 7px 0}
+
+#popup_container.modal #popup_content #popup_message h2{
+    font-size:1.2em;
+    line-height:20px;}
+
+#popup_container.modal #popup_content #popup_message div{
+    margin-bottom:2px;
+    padding:2px 10px 5px 30px;}
+
+#popup_container.modal #popup_content #popup_message p{
+    color:#333333 !important;
+    margin:0 !important;
+    padding:0 !important}
+
+#popup_container.modal #popup_content #popup_message div.msgOrientacao {
+    background:url(../images/interface/icone/message/msgOrientacao_20x20.png) no-repeat 5px 2px #f9f9f9;
+    border:1px solid #3CB4C3;}
+#popup_container.modal #popup_content #popup_message div.msgOrientacao h2{color:#3CB4C3 !important}
+
+#popup_container.modal #popup_content #popup_message div.msgSucesso {
+    background:url(../images/interface/icone/message/msgSucesso_20x20.png) no-repeat 5px 2px #eff7e0;
+    border:1px solid #408C2E;}
+#popup_container.modal #popup_content #popup_message div.msgSucesso h2{color:#408C2E !important;}
+
+#popup_container.modal #popup_content #popup_message div.msgAlerta {
+    background:url(../images/interface/icone/message/msgAlerta_20x20.png) no-repeat 5px 2px #fff6d8;
+    border:1px solid #E77917;}
+#popup_container.modal #popup_content #popup_message div.msgAlerta h2{color:#E77917 !important;}
+
+#popup_container.modal #popup_content #popup_message div.msgErro{
+    background:url(../images/interface/icone/message/msgErro_20x20.png) no-repeat 5px 2px #fff2f2;
+    border:1px solid #BF231B;}
+#popup_container.modal #popup_content #popup_message div.msgErro h2{color:#BF231B !important;}

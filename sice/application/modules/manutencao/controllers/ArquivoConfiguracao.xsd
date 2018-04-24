@@ -1,0 +1,86 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="configuracao">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="configuracaoVigente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="dataInicioVigencia"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="novaConfiguracao">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="dataInicioConfiguracao"/>
+                            <xs:element type="xs:string" name="dataExpiracao"/>
+                            <xs:element name="turma">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="qtdTurmaTutor"/>
+                                        <xs:element type="xs:string" name="qtdAlunoTurma"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="bolsa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="perfis">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="perfil" maxOccurs="unbounded" minOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="nomePerfil"/>
+                                                                <xs:element type="xs:string" name="qtdBolsaPeriodo"/>
+                                                                <xs:element name="valores" maxOccurs="unbounded" minOccurs="1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="valor">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element type="xs:string" name="qtdTurma"/>
+                                                                                        <xs:element type="xs:string" name="valorBolsa"/>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="avaliacaoPedagogica">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="avaliacao" maxOccurs="unbounded" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="situacao"/>
+                                                    <xs:element name="criterioAvalicao">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="min"/>
+                                                                <xs:element type="xs:string" name="max"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

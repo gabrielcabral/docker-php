@@ -1,0 +1,5 @@
+<?php
+if (isset($this->data)){
+    echo '<div class="listagem">' . $this->Table('Resultou em ' . count($this->data) . ' registro(s)', $this->data) . '</div>';
+}
+echo $this->form;

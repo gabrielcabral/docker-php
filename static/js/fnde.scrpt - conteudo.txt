@@ -1,0 +1,14 @@
+<!-- Core -->
+jquery.min.js
+
+<!-- Plugin -->
+jquery.alerts.js
+jquery.bgiframe.js
+jquery.datePicker.js
+jquery.meio.mask.js
+jquery.picklists.js
+
+<!-- Utilitarios -->
+Dialog.js
+Helper.js
+Autoloader.js

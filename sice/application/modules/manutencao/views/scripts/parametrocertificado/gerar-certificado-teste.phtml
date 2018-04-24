@@ -1,0 +1,21 @@
+<?php
+
+require_once "Fnde/Sice/Html2pdf/Html2pdf.php";
+
+$pagina = "<page backtop='30mm' backbottom='7mm' backleft='10mm' backright='0mm' backimg='img/certificado_verso.gif' backimgx='11' backimgy='8' backimgw='1100'></page>";
+$frente = Fnde_Sice_Business_Componentes::retornaHtmlCertificadoPdf($this->dados);
+$verso = Fnde_Sice_Business_Componentes::retornapagina2($this->dados);
+
+try {
+
+
+
+    $html2pdf = new Fnde_Sice_Html2pdf_Html2pdf('L', 'A4', 'pt', true);
+    $html2pdf->writeHTML(utf8_encode($frente));
+    $html2pdf->WriteHTML(utf8_encode($pagina));
+    $html2pdf->rotateText(180, 150, 111, utf8_encode($verso));
+    $html2pdf->Output('certificado-teste.pdf', 'I');//'I');
+die();
+} catch (Exception $e) {
+    echo $e->getMessage();
+}

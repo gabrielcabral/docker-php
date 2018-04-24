@@ -1,0 +1,182 @@
+@CHARSET "ISO-8859-1";
+
+/* Mensagens 
+********************************************************************/
+#mensagens > ul{
+	margin: 0;
+	padding: 0;
+}
+#mensagens > ul > li.msgOrientacao
+, #mensagens > ul > li.msgSucesso
+, #mensagens > ul > li.msgAlerta
+, #mensagens > ul > li.msgErro{
+	list-style: none;
+    margin: 5px 20px !important;
+    min-height: 30px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+}
+
+#mensagens > ul > li.msgOrientacao p
+, #mensagens > ul > li.msgSucesso p
+, #mensagens > ul > li.msgAlerta p
+, #mensagens > ul > li.msgErro p {
+    margin: 2px 0 !important;
+    padding: 0 !important;
+}
+
+#mensagens > ul > li.msgOrientacao h3
+, #mensagens > ul > li.msgSucesso h3
+, #mensagens > ul > li.msgAlerta h3
+, #mensagens > ul > li.msgErro h3 {
+    font-size: 1.3em;
+    line-height: 30px;
+    margin: 0;
+}
+
+#mensagens > ul > li.msgOrientacao ul
+, #mensagens > ul > li.msgSucesso ul
+, #mensagens > ul > li.msgAlerta ul
+, #mensagens > ul > li.msgErro ul {
+    list-style: decimal outside none;
+}
+#mensagens > ul > li.msgOrientacao {
+    background: url("../images/interface/icone/message/msgOrientacao.png") no-repeat scroll 5px 2px #F9F9F9;
+    border-color: #DBE6EE #DBE6EE #3CB4C3;
+}
+#mensagens > ul > li.msgOrientacao h3
+, #mensagens > ul > li.msgOrientacao h4 {
+    color: #3CB4C3 !important;
+}
+#mensagens > ul > li.msgSucesso {
+    background: url("../images/interface/icone/message/msgSucesso.png") no-repeat scroll 5px 2px #EFF7E0;
+    border-color: #DAECB7 #DAECB7 #408C2E;
+}
+#mensagens > ul > li.msgSucesso h3
+, #mensagens > ul > li.msgSucesso h4 {
+    color: #408C2E !important;
+}
+#mensagens > ul > li.msgAlerta {
+    background: url("../images/interface/icone/message/msgAlerta.png") no-repeat scroll 5px 2px #FFF6D8;
+    border-color: #EBD0B8 #EBD0B8 #E77917;
+}
+#mensagens > ul > li.msgAlerta h3
+, #mensagens > ul > li.msgAlerta h4 {
+    color: #E77917 !important;
+}
+#mensagens > ul > li.msgErro {
+    background: url("../images/interface/icone/message/msgErro.png") no-repeat scroll 5px 2px #FFF2F2;
+    border-color: #C06464 #C06464 #BF231B;
+}
+#mensagens > ul > li.msgErro h3
+, #mensagens > ul > li.msgErro h4 {
+    color: #BF231B !important;
+}
+
+/* Listagem 
+********************************************************************/
+div.listagem div.listagemAcoesBarra input.btnPrint
+, div.listagem div.listagemAcoesBarra input.btnCVS
+, div.listagem div.listagemAcoesBarra input.btnExcel
+, div.listagem div.listagemAcoesBarra input.btnPDF
+, div.listagem div.listagemAcoesBarra input.btnXLS{
+    background-image: url("../images/interface/background/botoesTabela.png") !important;
+    border: 0 none;
+    height: 26px;
+    margin: 3px 5px 0 0;
+    overflow: hidden;
+    text-indent: 50px;
+    white-space: nowrap;
+    width: 26px;
+    text-decoration: none;
+}
+
+
+div.listagem div.listagemAcoesBarra input.btnPrint {
+    background-position: 0 0;
+}
+div.listagem div.listagemAcoesBarra input.btnPrint:hover {
+    background-position: 0 -26px;
+}
+
+div.listagem div.listagemAcoesBarra input.btnCVS {
+    background-position: -104px 0;
+}
+div.listagem div.listagemAcoesBarra input.btnCVS:hover {
+    background-position: -104px -26px;
+}
+div.listagem div.listagemAcoesBarra input.btnXLS {
+    background-position: -78px 0;
+}
+div.listagem div.listagemAcoesBarra input.btnXLS:hover {
+    background-position: -78px -26px;
+}
+div.listagem div.listagemAcoesBarra input.btnPDF {
+    background-position: -52px 0;
+}
+div.listagem div.listagemAcoesBarra input.btnPDF:hover {
+    background-position: -52px -26px;
+}
+
+.rich-table-subheadercell
+, .rich-table-cell{
+	font-size: 12px !important}
+
+/* Listagem - paginacao 
+********************************************************************/
+div.listagemPaginacao table.paginador
+, div.listagemPaginacao table.paginador td
+, div.listagemPaginacao table.paginador table.rich-dtascroller-table{
+	border: 0 !important;
+	padding: 0
+	}
+	
+div.listagemPaginacao table.paginador table.rich-dtascroller-table{
+	margin-left: 10px;
+	border-collapse: collapse;}
+	
+div.listagemPaginacao table.paginador table.rich-dtascroller-table
+, div.listagemPaginacao table.paginador table.rich-dtascroller-table tbody
+, div.listagemPaginacao table.paginador table.rich-dtascroller-table tr
+, div.listagemPaginacao table.paginador table.rich-dtascroller-table td.rich-datascr-button{
+	background: none !important;}
+	
+div.listagemPaginacao table.paginador table.rich-dtascroller-table td{
+	line-height: 16px;
+	font-weight: bold;
+	width: inherit !important;
+	padding: 0 4px;}
+	
+div.listagemPaginacao table.paginador table.rich-dtascroller-table td.paginate_button{
+	border: 1px solid #c3c3c3 !important;
+	color: #193141
+}
+
+div.listagemPaginacao table.paginador table.rich-dtascroller-table td:hover.paginate_button{
+	border-color: #333 !important}
+
+.rich-datascr-button-dsbld {
+    color: #999 !important;
+}
+
+.rich-datascr-button-dsbld
+, div.listagemPaginacao table.paginador table.rich-dtascroller-table td.paginate_button{
+	padding: 0 10px;}
+
+	
+/* Agrupador
+********************************************************************/
+fieldset.agrupador table td{
+	white-space: nowrap;
+	display: block;
+	padding: 0 10px 2px 0
+}
+
+fieldset.agrupador table td label{
+	display: inline !important;
+}
+
+div.inLine fieldset.agrupador table td{
+	display: table-cell;}

@@ -1,0 +1,210 @@
+/* CSS Document */
+
+/* MENU ****************************************************/
+div.menu
+, ul.menu{
+    background: #6e9ebc url(../images/interface/background/fundoMenu.png) repeat-x top left;
+    font-size:.7em;}
+
+div.menu > ul
+, ul.menu{
+    height: 40px;
+    display: table-cell;
+    vertical-align: bottom
+}
+
+div.menu > ul
+, div.menu > div > ul{
+    padding-left: 20px;
+}
+
+div.menu > ul li,
+div.menu > ul li a,
+ul.menu > li
+, ul.menu > li > a{
+    background-image: url(../images/interface/background/m_niv01_bg.png);
+}
+
+div.menu > ul li
+, ul.menu > li{background-repeat: repeat-x}
+
+div.menu > ul li a
+, ul.menu > li > a{background-repeat: no-repeat}
+
+div.menu > ul li
+, ul.menu > li{
+    display: inline-block;
+    float:left;
+    height:24px;
+    padding:0;
+    color:#d3e3ee;
+    font-weight:bold;
+    cursor:pointer;
+    background-position: 0px -24px !important}
+
+div.menu > ul li a
+, ul.menu > li > a{
+    text-decoration:none;
+    color:#d3e3ee;
+    display: table-cell;
+    height: 24px;
+    padding: 0 15px 0 10px;
+    vertical-align: middle;
+    background-position: right 0px !important}
+
+div.menu > ul li:hover
+, ul.menu > li:hover{background-position: 0px -72px !important}
+
+div.menu > ul li:hover a
+, ul.menu > li > a:hover{background-position: right -48px !important}
+
+div.menu > ul li.active
+, ul.menu > li.active{background-position: 0px -120px !important}
+
+div.menu > ul li.active a
+, ul.menu > li.active > a{
+    background-position: right -96px !important;
+    color:#FFFFFF}
+
+/* N�vel 2 */
+div.menu div {
+    display: table;
+    width: 100%}
+
+div.menu > div > ul
+, ul.menu > li > ul{
+    height: 22px;
+    border-bottom:1px solid #a8c5d7;
+    background-color:#6e9ebc;
+    color: #fff;}
+
+div.menu > div > ul li
+, ul.menu > li > ul > li{
+    float: left;
+    line-height: 21px;
+    background: #6e9ebc;
+    font-weight: normal;
+    list-style: none}
+
+div.menu > div > ul li:hover
+, ul.menu > li > ul > li:hover{
+    background: #89b0ca}
+
+div.menu > div > ul li a
+, ul.menu > li > ul > li > a{
+    color: #FFFFFF;
+    border-left:1px dotted #a8c5d7;
+    padding:0 7px;
+    text-decoration: none}
+
+div.menu > div > ul li.active
+, ul.menu > li > ul > li.active{
+    background:#e6eff4;
+    color:#00579C;
+    cursor:default;
+    line-height:23px}
+
+div.menu > div > ul li.active a
+, ul.menu > li > ul > li.active > a{
+    text-decoration:none;
+    color:#00579C;
+    cursor:default}
+
+/* N�vel 3 */
+div.menu div div 
+, ul.menu > li > ul > li > ul{
+    background-color: #e6eff4;
+    border-bottom: 1px solid #6e9ebc;
+}
+
+div.menu div div{
+    padding: 7px 10px;
+    position: relative
+}
+
+div.menu div div ul 
+, ul.menu > li > ul > li > ul > li{
+    background:none;
+    float: left;
+    border-right:1px dotted #a8c5d7;
+    border-bottom: 0;	
+    list-style: none;
+
+    height:100%}
+
+div.menu div div ul{
+    padding: 0 10px;
+}
+
+
+div.menu div div ul li a
+, ul.menu > li > ul > li > ul li
+, ul.menu > li > ul > li > ul li a{
+    color:#333;
+    text-decoration:none}
+
+div.menu div div ul li a:hover
+, ul.menu > li > ul > li > ul li a:hover{
+    text-decoration:underline;}
+
+div.menu div div ul li ul
+, ul.menu > li > ul > li > ul li ul{
+    float: none;
+    border: 0;
+    padding: 0 0 0 5px ;}
+
+div.menu div div ul li span
+, ul.menu > li > ul > li > ul li span{font-weight:bold}
+
+div.menu div div ul li ul li
+, ul.menu > li > ul > li > ul li {font-size:1em}
+
+/*****************************/
+ul.menu{
+    display: table;
+    width: 100%;
+}
+
+ul.menu > li{
+    margin-top: 16px;
+}
+
+ul.menu > li:first-child
+, ul.menu > li > ul > li:first-child{
+    margin-left: 20px;
+}
+
+ul.menu > li > ul
+, ul.menu > li > ul > li > ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%
+}
+
+ul.menu > li > ul > li > ul{
+    top: 100%
+}
+
+ul.menu > li > ul > li > ul > li{
+    margin: 7px 10px;
+    padding-right: 10px
+}
+
+ul.menu > li > ul > li > ul > li:first-child{
+    margin-left: 20px
+}
+
+ul.menu > li > ul > li > ul li{
+    list-style: none;
+    line-height: 1.3em ;   
+}
+
+ul.menu ul{
+    display: none
+}
+
+ul.menu > li.active > ul
+, ul.menu > li.active > ul > li.active ul{
+    display: table;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuracao> 
+  <configuracaoVigente>
+    <dataInicioVigencia>01/07/2014</dataInicioVigencia> 
+  </configuracaoVigente> 
+  <novaConfiguracao> 
+    <dataInicioConfiguracao>01/07/2014</dataInicioConfiguracao> 
+    <dataExpiracao>31/12/2100</dataExpiracao> 
+    <turma> 
+      <qtdTurmaTutor>2</qtdTurmaTutor> 
+      <qtdAlunoTurma>40</qtdAlunoTurma> 
+    </turma> 
+    <bolsa> 
+      <perfis> 
+        <perfil> 
+          <nomePerfil>Articulador</nomePerfil> 
+          <qtdBolsaPeriodo>1</qtdBolsaPeriodo> 
+          <valores> 
+            <valor> 
+              <qtdTurma>1</qtdTurma> 
+              <valorBolsa>1000,00</valorBolsa> 
+            </valor> 
+          </valores> 
+        </perfil>
+        <perfil> 
+          <nomePerfil>Tutor </nomePerfil> 
+          <qtdBolsaPeriodo>1</qtdBolsaPeriodo> 
+          <valores> 
+            <valor> 
+              <qtdTurma>1</qtdTurma> 
+              <valorBolsa>700,00</valorBolsa> 
+            </valor> 
+							
+          </valores>					
+        </perfil> 
+        <perfil> 
+          <nomePerfil>Tutor </nomePerfil> 
+          <qtdBolsaPeriodo>1</qtdBolsaPeriodo> 
+          <valores> 
+            <valor> 
+              <qtdTurma>2</qtdTurma> 
+              <valorBolsa>900,00</valorBolsa> 
+            </valor> 
+							
+          </valores>					
+        </perfil> 
+        <perfil> 
+          <nomePerfil>Coordenador Executivo Estadual</nomePerfil> 
+          <qtdBolsaPeriodo>1</qtdBolsaPeriodo> 
+          <valores> 
+            <valor> 
+              <qtdTurma>1</qtdTurma> 
+              <valorBolsa>1200,00</valorBolsa> 
+            </valor> 
+          </valores>					
+        </perfil> 					
+      </perfis> 
+    </bolsa> 
+    <avaliacaoPedagogica> 
+      <avaliacao> 
+        <situacao>Reprovado</situacao> 
+        <criterioAvalicao>
+          <min>0</min>
+          <max>49</max>
+        </criterioAvalicao>
+      </avaliacao>
+      <avaliacao> 
+        <situacao>Aprovado</situacao> 
+        <criterioAvalicao>
+          <min>50</min>
+          <max>79</max>
+        </criterioAvalicao>
+      </avaliacao>
+      <avaliacao>
+        <situacao>Aprovado com destaque</situacao> 
+        <criterioAvalicao>
+          <min>80</min>
+          <max>100</max>
+        </criterioAvalicao>					
+      </avaliacao>
+      <avaliacao> 
+        <situacao>Desistente</situacao> 
+        <criterioAvalicao>
+          <min>0</min>
+          <max>0</max>
+        </criterioAvalicao>
+      </avaliacao> 
+    </avaliacaoPedagogica> 
+  </novaConfiguracao> 
+</configuracao>

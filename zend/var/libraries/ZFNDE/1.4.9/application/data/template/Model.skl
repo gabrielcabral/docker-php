@@ -1,0 +1,24 @@
+<?php
+/**
+ * Arquivo de classe de modelo do tipo: database
+ * 
+ * Gerado automaticamente pelo gerador: ZFnde Model.
+ *
+ * $Rev::                      $
+ * $Date::                     $
+ * $Author::                   $
+ * 
+ * @package {_app_}
+ * @category Model
+ * @name {_table_}
+ */
+
+/**
+ * Classe de Modelo: Fnde_{_app_}_Model_{_table_}
+ * @uses Fnde_{_app_}_Model_Database_{_table_}
+ * @version $Id$
+ */
+class Fnde_{_app_}_Model_{_table_} extends Fnde_{_app_}_Model_Database_{_table_}
+{
+    
+}

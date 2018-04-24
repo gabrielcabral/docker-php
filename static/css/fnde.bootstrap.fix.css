@@ -1,0 +1,134 @@
+/* IMPORT
+ ****************************************************************************/
+@import url("fonts.css");
+@import url("header.css");
+@import url("menu.css");
+
+/* Body
+ ****************************************************************************/
+body
+, body > div.container-fluid{
+	margin: 0;
+	padding: 0;	
+}
+
+body
+, input, button, select, textarea{
+	font-family: Helvetica, Verdana, sans-serif;
+}
+
+
+/* #header
+ ****************************************************************************/
+#header{
+	background-color: #064874;
+	background-position: top left;
+	height: auto;
+}
+
+#header div#logoFNDE
+, #header div#logoFNDE{
+	
+}
+
+#header div#logoFNDE{
+	text-align: right
+}
+
+#header div#logoFNDE img{
+	margin-right: 15px;
+}
+
+#header div#logoSistema{
+	font-family: 'deliciousbold_italic';
+	color:#fff;
+}
+
+#header div#logoSistema h1{
+	margin:0;
+	padding: 13px 0 0 20px;
+	font-size:34px;
+	line-height: 23px;
+	text-shadow: 2px 2px 5px #1e4159;
+	letter-spacing: 2px
+}
+
+#header div#logoSistema h1 span{
+	display: block;
+	font-size:14px;
+	margin:0;
+	letter-spacing: normal;
+}
+
+/* #menu
+ ****************************************************************************/
+div.menu{
+	font-size: 0.8em
+}
+
+div.menu ul{
+	margin: 0;
+}
+
+/* #conteudo
+ * 		#conteudoCabecalho
+ ****************************************************************************/
+#conteudoCabecalho h1
+, #conteudoCabecalho h2{
+	line-height: inherit
+}
+
+/* #conteudo
+ * 		.alert
+ ****************************************************************************/
+.alert{
+	margin: 10px 20px;
+	font-size: 1.2em
+}
+
+#conteudo .alert h4{
+	color: #C09853;
+	margin: 0
+}
+
+#conteudo .alert-info h4 {
+    color: #3A87AD;
+}
+
+#conteudo .alert-success h4 {
+    color: #468847;
+}
+
+#conteudo .alert-danger h4
+, #conteudo .alert-error h4 {
+    color: #B94A48;
+}
+
+
+/* #conteudo
+ * 		.form-horizontal
+ ****************************************************************************/
+#conteudo .form-horizontal .control-label{
+	border-bottom: 1px dotted #ccc;
+	text-align: left
+}
+
+
+input[type="submit"], input[type="reset"], input[type="button"], button
+, input.ui-state-hover[type="submit"], input.ui-state-hover[type="reset"], input.ui-state-hover[type="button"], button.ui-state-hover{
+	height: inherit;
+	margin: 
+}
+
+fieldset{
+	border-radius: 5px;
+}
+
+legend{
+	margin: inherit;
+	line-height: inherit;
+	width: inherit;
+	border-bottom: 0;
+	padding: 0 5px;
+	font-size: 1.2em !important
+}

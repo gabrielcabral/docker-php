@@ -1,0 +1,30 @@
+
+<fieldset>
+    <legend>Migração</legend>
+    Arquivo ACL foi migrado: Application/configs/acl_novo.ini
+
+    <br/><br/>
+
+    <p>Outras atualizações:</p>
+    <ul>
+        <li>application/public/index.php
+            <ul>
+                <li><b>substituir com o comando</b>:
+                <pre>defined('ZF_FNDE_ROOT')
+        || define('ZF_FNDE_ROOT', DIRECTORY_SEPARATOR . 'u02' . DIRECTORY_SEPARATOR . 'library' . DIRECTORY_SEPARATOR . 'php'
+                . DIRECTORY_SEPARATOR . 'zfnde' .  DIRECTORY_SEPARATOR . 'stable');</pre></li>
+            </ul>
+        </li>
+        <br/>
+        <li>application/configs/application.ini
+            <ul>
+                <li><b>adicionar</b>: config.acl    = APPLICATION_CONFIGS "/acl.ini"</li>
+                <li><b>remover</b>: security.enabled = true</li>
+                <li><b>adicionar</b>: resources.acl.enabled = true</li>
+            </ul>
+        </li>
+        <br/>
+        <li><b>Fazer backup</b>: application/configs/acl.ini -> Application/configs/acl.ini.bkp</li>
+        <li><b>Renomear</b>: application/configs/acl_novo.ini -> Application/configs/acl.ini</li>
+    </ul>
+</fieldset>

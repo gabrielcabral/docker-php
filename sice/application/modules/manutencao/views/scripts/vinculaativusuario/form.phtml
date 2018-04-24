@@ -1,0 +1,28 @@
+<div id='preLoader'></div>
+<script type="text/javascript">var baseUrl = '<?php echo $this->baseUrl(); ?>';</script>
+<style type="text/css">
+    .btnPesquisar {
+    	margin-left: 240px;
+    	position: absolute;
+    	
+	}
+	
+	#form span{
+	    width: 140px !important;
+	}
+
+	#form span.campoRequerido{
+	    width: 125px !important;
+	}
+</style>
+<div id="atividades">
+    <?php
+echo $this->form;
+	?>
+</div>
+<div id="html" style="display:none;">
+    <?php
+echo $this->formLimpo;
+	?>
+</div>
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.usuario.outras.atividades.js"  type="text/javascript"></script>

@@ -1,0 +1,144 @@
+/* CABEÇALHO ***********************************************/
+#header {
+    background-image: url("../images/interface/background/fundoCabecalho.png");
+    background-repeat:repeat-x;
+    height: 62px;
+    position:relative;
+}
+#header #logoFnde {
+    float:right;
+}
+#header #logoSistema {
+    float:left
+}
+
+h1#logoFnde, h1#logoSistema{
+    height:62px;
+    display:block;
+    overflow:hidden;
+    white-space:nowrap;}
+
+h1#logoFnde{
+    width:173px;
+    text-indent:300px;
+    background:url("../images/logo/fnde_web.png") no-repeat;}
+
+h1#logoSistema{
+    width:430px;
+    text-indent:600px;}
+
+#header #menuAux {
+    font-family: arial;
+    position:absolute;
+    top:62px;
+    right:20px;
+    display: block;
+    height: 38px;
+    font-size: .7em;
+    color: #fff
+}
+
+#header #menuAux > ul {
+    list-style: none;
+    display: table;
+}
+
+#menuAux #infoUsuario{
+    height: 38px;
+    display: table-cell;
+    vertical-align: middle;
+    border-left: 1px solid #15476c;
+    border-right: 1px solid #15476c;
+    background:url("../images/interface/background/menuAux_infousuario_bg.png") top left repeat-x;
+}
+
+#infoUsuarioNome, #infoUsuarioSessao{
+    display: block;
+    padding: 0 10px;}
+
+#infoUsuarioSessao{
+    color: #c6eaff;
+    font-size: .8em;
+    letter-spacing: .05em}
+
+#infoUsuarioSessao span{color:#ffe000 }
+
+#btnSisAjuda, #btnSisSair{
+    width: 23px;
+    height: 19px;
+    overflow: hidden;}
+
+#btnSisAjuda a, #btnSisSair a{
+    display: block;
+    height: 100%;
+    text-indent: 50px;
+    cursor: pointer;
+    background:url("../images/interface/background/menuAux_btns.png") no-repeat;}
+
+#btnSisAjuda a{ background-position: top left;}
+#btnSisAjuda a:hover{ background-position: top right;}
+
+#btnSisSair a{ background-position: bottom left;}
+#btnSisSair a:hover{ background-position: bottom right;}
+
+#header #infoUsuario a {
+    color:#b1c3d1;
+    text-decoration:none
+}
+#header #infoUsuario a:hover {
+    color:#fff;
+    text-decoration:underline;
+}
+#header #infoUsuario > ul {
+    list-style:none;
+    display: none
+
+}
+
+#header #infoUsuario > ul > li {
+    padding:0 8px;
+    border-left: 1px solid #b1c3d1;
+}
+
+#header #infoUsuario ul li:first-child {
+    border-left: none;
+}
+#header #infoUsuario ul li ul {
+    position:absolute;
+    top:19px;
+    left:0px;
+    border:1px solid #dedede;
+    background-color:#fff;
+    color:#578CAF;
+    width:140px;
+    display:none;
+}
+#header #infoUsuario ul li ul li {
+    display:block;
+    border-left: none;
+    border-top: 1px solid #b1c3d1;
+    margin:0 5px;
+    padding:5px
+}
+#header #infoUsuario ul li ul li a {
+    color:#578CAF
+}
+#header #infoUsuario ul li ul li a:hover {
+    color:#578CAF
+}
+#header #infoUsuario ul li ul li:first-child {
+    border-top: none
+}
+#header #infoUsuario ul li ul li ul {
+    position:static;
+    width:auto;
+    margin-top :3px;
+    border:none
+}
+#header #infoUsuario ul li ul li ul li {
+    display:inline;
+    padding:0;
+    margin:0;
+    border:none;
+    font-size:1.3em
+}

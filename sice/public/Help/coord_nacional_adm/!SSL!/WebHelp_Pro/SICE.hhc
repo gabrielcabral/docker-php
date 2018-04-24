@@ -1,0 +1,313 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="toc">
+  <param name="Image Width" value="16">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value=" Informações Gerais">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1. Apresentação">
+      <param name="Local" value="Apresenta__o.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="2. Perfis de Acesso">
+      <param name="Local" value="2._Perfis_de_Acesso.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="3. Acesso Público">
+      <param name="Local" value="1._Acesso_P_blico.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="4. Login de Acesso">
+      <param name="Local" value="2._Login_de_Acesso.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Acesso ao Sistema">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1. Menu do Sistema">
+      <param name="Local" value="3._Menu_do_Sistema.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1.1 Estrutura do Menu">
+      <param name="Local" value="3.1Estrutura_do_Menu_.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Funcionalidades do Sistema">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1. Acesso">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="1.1 Liberar senha">
+        <param name="Local" value="1.1_Liberar_senha.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="1.2 Alterar senha">
+        <param name="Local" value="1.2_Alterar_senha.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="2. Manutenção">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="2.1 Configuração">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.1.1 Cadastrar Configuração">
+          <param name="Local" value="2.1.3_Cadastrar_Configura__o.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.1.2 Pesquisar Configuração">
+          <param name="Local" value="2.1_Configura__o.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.1.3 Desativar Configuração">
+          <param name="Local" value="2.1.1_Desativar_Configura__o.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.1.4 Visualizar Configuração">
+          <param name="Local" value="2.1.2_Visualizar_Configura__o.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="2.2 Período de Vinculação">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.2.1 Cadastrar Período de Vinculação">
+          <param name="Local" value="2.2.1_Cadastrar_Per_odo_de_Vincula__o.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.2.2 Pesquisar Período de Vinculação">
+          <param name="Local" value="2.2.2_Pesquisar_Per_odo_de_Vincula__o.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.2.3 Excluir Período de Vinculação">
+          <param name="Local" value="2.2.3_Excluir_Per_odo_de_Vincula__o.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="2.3 Módulos">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.3.1 Cadastrar Módulo">
+          <param name="Local" value="2.3.1_Cadastrar_M_dulos.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.3.2 Pesquisar Módulo">
+          <param name="Local" value="2.3.2_Pesquisar_M_dulos.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.3.3 Visualizar Módulo">
+          <param name="Local" value="2.3.3_Visualizar_M_dulos.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.3.4 Editar Módulo">
+          <param name="Local" value="2.3.4_Editar_M_dulos.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.3.5 Excluir Módulo">
+          <param name="Local" value="2.3.5_Excluir_M_dulo.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="2.4 Curso">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.4.1 Cadastrar Curso">
+          <param name="Local" value="2.4.1_Cadastrar_Curso.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.4.2 Pesquisar Curso">
+          <param name="Local" value="2.4.2_Pesquisar_Curso.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.4.3 Visualizar Curso">
+          <param name="Local" value="2.4.3_Visualizar_Curso.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.4.4 Editar Curso">
+          <param name="Local" value="2.4.4_Editar_Curso.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.4.5 Excluir Curso">
+          <param name="Local" value="2.4.5_Excluir_Curso.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="2.5 Usuários">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.5.1 Cadastrar Usuário">
+          <param name="Local" value="2.5.1_Cadastrar_Usu_rio.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.5.2 Pesquisar Usuário">
+          <param name="Local" value="2.5.2_Pesquisar_Usu_rio.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.5.3 Visualizar Usuário">
+          <param name="Local" value="2.5.3_Visualizar_Usu_rio.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.5.4 Editar Usuário">
+          <param name="Local" value="2.5.4_Editar_Usu_rio.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.5.5 Excluir Usuário">
+          <param name="Local" value="2.5.5_Excluir_Usu_rio.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.5.6 Ativa / Desativa Usuário">
+          <param name="Local" value="2.5.6_Ativar___Inativar_Usu_rio.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.5.7 Visualizar Histórico Bolsista">
+          <param name="Local" value="2.5.7_Visualizar_Hist_rico_Bolsista.htm">
+        </object>
+        </ul>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="3. Secretaria">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="3.1 Turmas">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.1.1_Cadastrar Turmas">
+          <param name="Local" value="3.1.1_Cadastrar_Turmas.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.1.2 Pesquisar Turma">
+          <param name="Local" value="3.1.2_Pesquisar_Turma.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.1.3 Visualizar Turma">
+          <param name="Local" value="3.1.3_Visualizar_Turma.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.1.4 Editar Turma">
+          <param name="Local" value="3.1.4_Editar_Turma.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.1.5 Excluir Turma">
+          <param name="Local" value="3.1.5_Excluir_Turma.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.1.6 Visualizar Histórico">
+          <param name="Local" value="3.1.10_Visualizar_Hist_rico.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="3.2 Avaliação Pedagógica">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.2.1 Pesquisar Avaliação Pedagógica">
+          <param name="Local" value="3.2.1_Pesquisar_Avalia__o_Pedag_gica.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.2.2 Visualizar Avaliação Pedagógica">
+          <param name="Local" value="3.2.2_Visualizar_Avalia__o_Pedag_gica.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.2.3 Avaliar Cursista">
+          <param name="Local" value="3.2.3_Avaliar_Cursista.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.2.4 Finalizar Turma">
+          <param name="Local" value="3.2.4_Finalizar_Turma.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="3.3 Emitir Certificado">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.3.1 Emitir Certificado">
+          <param name="Local" value="3.4.1_Emitir_Certificado.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.3.2 Notificar cursistas para aval. curso">
+          <param name="Local" value="3.1.11_Notificar_cursistas_para_aval._curso.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="3.4 Parametrizar Documento">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.4.1 Paramentrizar Documento">
+          <param name="Local" value="3.5.1_Paramentrizar_Documento.htm">
+        </object>
+        </ul>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="4. Financeiro">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="4.1 Bolsas">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="4.1.1 Pesquisar Bolsista">
+          <param name="Local" value="4.1.1_Pesquisar_Bolsista.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="4.1.2 Avaliar Bolsista">
+          <param name="Local" value="4.1.2_Avaliar_Bolsista.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="4.1.3 Solicitar Homologação">
+          <param name="Local" value="4.1.3_Solicitar_Homologacao.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="4.1.4 Homologar Turma">
+          <param name="Local" value="4.1.4_Homologar_Turma.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="4.1.5 Enviar SGB">
+          <param name="Local" value="4.1.5_Enviar_SGB.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="4.1.6 Verificar Pendências">
+          <param name="Local" value="4.1.6_Verificar_Pendencias.htm">
+        </object>
+        </ul>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="5. Relatórios">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="5.1 Emitir Relatórios">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="5.1.1 Emitir Relatórios">
+          <param name="Local" value="5.1.1_Emitir_Relat_rio.htm">
+        </object>
+        </ul>
+      </ul>
+    </ul>
+</ul>
+</html>

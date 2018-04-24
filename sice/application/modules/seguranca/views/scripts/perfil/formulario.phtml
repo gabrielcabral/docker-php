@@ -1,0 +1,32 @@
+<?php
+$form = new Zend_Form();
+$form->setAction($this->baseUrl() . '/index.php/seguranca/perfil/gravar')->setMethod('post');
+
+// Create and configure username element:
+$username = $form->createElement('text', 'username', array('id' => 'nome'));
+$username->addValidator('alnum')->addValidator('stringLength', false, array(6, 20))->setRequired(true)->addFilter(
+		'StringToLower');
+
+// Create and configure password element:
+$password = $form->createElement('password', 'password', array('label' => 'Senha: '));
+$password->addValidator('StringLength', false, array(6))->setRequired(true);
+
+// Add elements to form:
+$form->addElement($username)->addElement($password, 'password')
+// use addElement() as a factory to create 'Login' button:
+->addElement('submit', 'login', array('label' => 'Loggin'));
+?>
+
+<?php
+
+//echo $this->Fjquery('teste');
+echo $this->ajaxLink("Teste link", "/hello/world", array('update' => '#content'));
+?>                          
+Pick your Date: <?php echo $this->datePicker("dp1", '', array('defaultDate' => date('Y/m/d', time())));
+				?>
+     <div id="content"></div>
+<div id="divFormulario">      
+	<?php echo ( $this->ob ); ?>
+	dg saoiudh sapiud oidugsa dsaoiuyd 
+	<?php echo $form ?>
+</div>

@@ -1,0 +1,16 @@
+<?php if ( isset($this->exception) ) : ?>
+    <h3>Exception information:</h3>
+    <p>
+        <b>Message:</b> <?php echo $this->exception->getMessage() ?>
+    </p>
+
+    <h3>Stack trace:</h3>
+    <pre>
+        <?php echo Fnde_Util::yUmlException($this->exception) ?>
+    </pre>
+
+    <h3>Request Parameters:</h3>
+    <pre>
+        <?php echo var_export($this->request->getParams(), true) ?>
+    </pre>
+<?php endif ?>

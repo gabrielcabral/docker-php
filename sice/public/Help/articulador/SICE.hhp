@@ -1,0 +1,65 @@
+[OPTIONS]
+Compiled File=SICE.chm
+Title=SICE
+Contents File=SICE.hhc
+Index File=SICE.hhk
+Default topic=
+Default Window=
+Error log file=
+Display compile progress=No
+Display compile notes=No
+Full-text search=Yes
+Binary Index=Yes
+Auto Index=No
+Enhanced decompilation=No
+Binary TOC=No
+Flat=No
+
+[WINDOWS]
+
+[FILES]
+Apresentação.htm
+2._Perfis_de_Acesso.htm
+1._Acesso_Público.htm
+2._Login_de_Acesso.htm
+3._Menu_do_Sistema.htm
+3.1Estrutura_do_Menu_.htm
+1.2_Alterar_senha.htm
+1.1_Liberar_senha.htm
+2.5.1_Cadastrar_Usuário.htm
+2.5.2_Pesquisar_Usuário.htm
+2.5.3_Visualizar_Usuário.htm
+3.1.3_Visualizar_Turma.htm
+3.1.10_Visualizar_Histórico.htm
+2.5.6_Ativar___Inativar_Usuário.htm
+3.1.2_Pesquisar_Turma.htm
+2.5.7_Visualizar_Histórico_Bolsista.htm
+2.5.5_Excluir_Usuário.htm
+2.5.4_Editar_Usuário.htm
+3.2.2_Visualizar_Avaliação_Pedagógica.htm
+3.1.11_Notificar_cursistas_para_aval._curso.htm
+3.1.12_Autorizar_Turma.htm
+3.1.13_Não_Autorizar_Turma.htm
+3.1.14_Cancelar_Turma.htm
+3.2.1_Pesquisar_Avaliação_Pedagógica.htm
+3.2.5_Emitir_Certificado.htm
+3.4.1_Avaliar_Bolsista.htm
+3.4.2_Avaliar_bolsista.htm
+3.1.15_Rejeitar_Cancelamento.htm
+4.4.3_Verificar_Pendências.htm
+3.3.2_Notificar_Cursista.htm
+eHelp.xml
+RoboHHRE.lng
+
+SICE.glo
+SICE.brs
+[ALIAS]
+#include SICE.ali
+
+[MAP]
+#include BSSCDefault.h
+
+[TEXT POPUPS]
+BSSCDefault.h
+
+

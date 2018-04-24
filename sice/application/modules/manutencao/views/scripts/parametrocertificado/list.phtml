@@ -1,0 +1,43 @@
+<?php
+echo $this->form;
+?>
+
+<div class="notas">Campos obrigatórios</div>
+
+
+<br clear="all"/>
+<?php
+
+if ($this->resultado):
+
+    $rowAction = array(
+        'edit' => array('label' => 'editar',
+            'url' => $this->Url(array('action' => 'edicao', 'id' => '')) . '%s',
+            'params' => array('NU_SEQ_PARAM_CERT'),
+            'attribs' => array('class' => 'icoEditar', 'title' => 'Editar',
+                'mensagem' => 'Deseja realmente alterar dados?',)),
+        'delete' => array('label' => 'Excluir',
+            'url' => $this->Url(array('action' => 'excluir', 'id' => '')) . '%s',
+            'params' => array('NU_SEQ_PARAM_CERT'),
+            'attribs' => array('class' => 'icoExcluir excluir',
+                'mensagem' => 'Deseja realmente excluir o registro?', 'title' => 'Excluir')),);
+
+    $arrHeader = array('<center>Data Início</center>', '<center>Data Fim</center>', '<center>Nome do Dirigente</center>', '<center>Cargo</center>', '<center>Local de Atuação</center>', '<center>Logo</center>');
+
+    $grid = new Fnde_View_Helper_DataTables();
+    $grid->setHeaderActive(false);
+    $grid->setActionColumn("<center>Ação</center>");
+    $grid->setAutoCallJs(true);
+    $grid->setTitle("Listagem de Parametros");
+    $grid->setColumnsHidden(array('NU_SEQ_PARAM_CERT'))
+        ->setData($this->resultado)
+        ->setHeader($arrHeader)
+        ->setRowAction($rowAction)
+        ->setId('NU_SEQ_PARAM_CERT')
+        ->setTableAttribs(array('id' => 'edit'));
+
+    echo $grid;
+
+endif;
+?>
+<script src="<?php echo $this->baseUrl(); ?>/js/manutencao.curso.js" type="text/javascript"></script>

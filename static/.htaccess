@@ -1,0 +1,16 @@
+<IfModule mod_headers.c>
+# 1 dia
+<FilesMatch "\.(ico|gif|jpg|jpeg|png|flv|pdf|swf)$">
+  ExpiresActive On
+  ExpiresDefault "access plus 2 day"
+  Header append Cache-Control "public"
+  FileETag None
+</FilesMatch>
+# 30minutos
+<FilesMatch "\.(js|css)$">
+  ExpiresActive On
+  ExpiresDefault "access plus 1 day"
+  Header append Cache-Control "public"
+  FileETag None
+</FilesMatch>
+</IfModule>

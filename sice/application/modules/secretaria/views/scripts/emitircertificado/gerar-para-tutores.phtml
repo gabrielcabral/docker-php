@@ -1,0 +1,100 @@
+<?php
+
+$arDados = $this->dados;
+$arDados['NO_USUARIO'] = ucwords(strtolower($arDados['NO_USUARIO']));
+
+$arDados['NO_SECRETARIO'] = strtoupper($arDados['NO_SECRETARIO']);
+
+require_once "Fnde/Sice/Html2pdf/Html2pdf.php";
+
+$pagina = "<page backtop='30mm' backbottom='7mm' backleft='10mm' backright='0mm' backimg='img/certificado_verso.gif' backimgx='11' backimgy='8' backimgw='1100'></page>";
+
+$imgLemaCertificado = "certificado_background.png";
+
+//PÁGINA 1
+$frente = "<page backtop='30mm' backbottom='7mm' backleft='120mm' backright='5mm' backimg='img/{$imgLemaCertificado}' backimgx='11' backimgy='8' backimgw='1100' >";
+//Texto do documento
+//font-family:Century Gothic
+$frente .= "<p style='text-align: center; font-family: arial; font-size:20px; color:#AA3333; line-height:145%;'>
+					Certificamos que
+					<p>
+					<b style='font-family:EdwardianScriptITC; font-size:40pt; line-height: 40pt;'>{$arDados['NO_USUARIO']}</b>
+					</p>
+					exerceu a função de Tutor(a) na turma {$arDados['NU_SEQ_TURMA']}
+					do  <b>{$arDados['DS_NOME_MODULO']} - {$arDados['DS_NOME_CURSO']}</b>,
+					do Programa Nacional de Fortalecimento dos
+					Conselhos Escolares, na cidade de(o)
+					<b>{$arDados['NO_MUNICIPIO']}/{$arDados['SG_UF']}</b>, no período de
+					<b>{$arDados['DT_INICIO']}</b> à <b>{$arDados['DT_FIM']}</b>,
+					com carga horária de <b>{$arDados['VL_CARGA_HORARIA']}</b> horas.
+					<br>
+					<br>
+					<b>
+					Brasília/DF, "
+    . Fnde_Sice_Business_Componentes::dataPorExtensoCertificado($arDados['DT_FINALIZACAO_REAL'])
+    . ".
+                    </b>
+					<br>
+					<br>
+					<span style='font-size:15px; margin:0;padding:0'>{$arDados['COD_IDENTIFICADOR']}</span>
+                    <br>
+                                        <span style='line-height:23px;'>
+                                        {$arDados['NO_SECRETARIO']}
+                                            <br>
+                                            <span style='font-size:15pt'>{$arDados['NO_CARGO']}<br>
+                                            {$arDados['NO_LOCAL_ATUACAO']}</span>
+                                        </span>
+				</p>
+				";
+if (isset($arDados['LOGO_GOVERNO'])) {
+    $frente .= "<div style='position:absolute; float:left; width:100%; text-align: center; bottom: 0'>
+
+					<img  src='{$arDados['LOGO_GOVERNO']}'>
+
+				</div>";
+}
+//Finalização da pagina do documento
+$frente .= "</page>";
+
+
+$verso = $html = "
+
+        <page_footer >
+            <div style='margin-left:10mm; '>
+                Para verificar a autenticidade deste documento, consulte em https://www.fnde.gov.br/autenticidade/index.php/, digitando o código de assinatura apresentado neste certificado.
+            </div>
+        </page_footer>
+
+        <p style='font-family: Arial; font-size:12pt'>
+            <b>Programa Nacional de Fortalecimento dos Conselhos Escolares</b><br/>
+            <br/>
+            Curso: <b>{$arDados['DS_NOME_CURSO']}</b><br/>
+            <br/>
+            Módulo: <b>{$arDados['DS_NOME_MODULO']}</b><br/>
+            Carga Horária: <b>{$arDados['VL_CARGA_HORARIA']} horas</b><br/>
+            Nome do Tutor: <b>{$arDados['NO_USUARIO']}</b><br/>
+            <br/>
+            Conteúdo Programático:<br/>
+
+            <br/>
+            <div style='width: 70%;'>
+
+            {$arDados['DS_CONTEUDO_PROGRAMATICO']}
+            </div>
+            <br/>
+            <br/>
+            Resolução/CD/FNDE nº 55, de 27 de dezembro de 2012.
+            <br/>Resolução/CD/FNDE nº 16, de 19 de agosto de 2014.
+        </p>
+		";
+
+$frente2pdf = new Fnde_Sice_Html2pdf_Html2pdf('L', 'A4', 'pt', true);
+$frente2pdf->writeHTML(utf8_encode($frente));
+$frente2pdf->WriteHTML(utf8_encode($pagina));
+$frente2pdf->WriteHTML(utf8_encode($verso));
+if ($this->donwload) {
+    $frente2pdf->Output($this->nomeArquivo, 'I');//'I');
+    die();
+} else {
+    $frente2pdf->Output($this->nomeArquivo, 'F');//'I');
+}

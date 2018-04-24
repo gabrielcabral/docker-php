@@ -1,0 +1,109 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="SiteType" value="toc">
+  <param name="Image Width" value="16">
+  <param name="Window Styles" value="0x800002">
+  <param name="ExWindow Styles" value="0x100">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value=" Informações Gerais">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1. Apresentação">
+      <param name="Local" value="Apresentação.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="2. Perfis de Acesso">
+      <param name="Local" value="2._Perfis_de_Acesso.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="3. Acesso Público">
+      <param name="Local" value="1._Acesso_Público.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="4. Login de Acesso">
+      <param name="Local" value="2._Login_de_Acesso.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Acesso ao Sistema">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1. Menu do Sistema">
+      <param name="Local" value="3._Menu_do_Sistema.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1.1 Estrutura do Menu">
+      <param name="Local" value="3.1Estrutura_do_Menu_.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Funcionalidades do Sistema">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1. Acesso">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="1.1 Alterar senha">
+        <param name="Local" value="1.2_Alterar_senha.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="2. Manutenção">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="2.1 Usuários">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.1.1 Pesquisar Usuário">
+          <param name="Local" value="2.5.2_Pesquisar_Usuário.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.1.2 Visualizar Usuário">
+          <param name="Local" value="2.5.3_Visualizar_Usuário.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="2.1.3 Editar Usuário">
+          <param name="Local" value="2.5.4_Editar_Usuário.htm">
+        </object>
+        </ul>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="3. Secretaria">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="3.1 Emitir Certificado">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="3.1.1 Emitir Certificado">
+          <param name="Local" value="3.2.5_Emitir_Certificado.htm">
+        </object>
+        </ul>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="4 Avaliação Institucional">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="4.1 Avaliar Curso">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="4.1.1 Avaliar Curso">
+          <param name="Local" value="3.3.1_Avaliar_Curso.htm">
+        </object>
+        </ul>
+      </ul>
+    </ul>
+</ul>
+</html>

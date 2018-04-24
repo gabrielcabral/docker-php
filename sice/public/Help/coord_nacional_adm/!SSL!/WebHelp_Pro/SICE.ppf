@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="SICE">
+ <windowlist>
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow" skin="WebHelp_Skin_Files\Default\Default.skn">
+   <elements><element name="BrowseSequence" Present="no" /><element name="SearchInput" Present="no" /><element name="SkinInstruction" value="whskin_ep_ins.xml" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+ </contextmap>
+ <topiclist defaulttopic="SICE_1.htm">
+  <topic>Apresenta__o.htm
+  </topic>
+  <topic>2._Perfis_de_Acesso.htm
+  </topic>
+  <topic>1._Acesso_P_blico.htm
+  </topic>
+  <topic>2._Login_de_Acesso.htm
+  </topic>
+  <topic>3._Menu_do_Sistema.htm
+  </topic>
+  <topic>3.1Estrutura_do_Menu_.htm
+  </topic>
+  <topic>1.1_Liberar_senha.htm
+  </topic>
+  <topic>1.2_Alterar_senha.htm
+  </topic>
+  <topic>2.1_Configura__o.htm
+  </topic>
+  <topic>2.1.1_Desativar_Configura__o.htm
+  </topic>
+  <topic>2.1.2_Visualizar_Configura__o.htm
+  </topic>
+  <topic>SICE_1.htm
+  </topic>
+  <topic>2.1.3_Cadastrar_Configura__o.htm
+  </topic>
+  <topic>2.5.2_Pesquisar_Usu_rio.htm
+  </topic>
+  <topic>2.5.3_Visualizar_Usu_rio.htm
+  </topic>
+  <topic>2.4.5_Excluir_Curso.htm
+  </topic>
+  <topic>2.4.4_Editar_Curso.htm
+  </topic>
+  <topic>2.2.2_Pesquisar_Per_odo_de_Vincula__o.htm
+  </topic>
+  <topic>2.5.1_Cadastrar_Usu_rio.htm
+  </topic>
+  <topic>2.2.1_Cadastrar_Per_odo_de_Vincula__o.htm
+  </topic>
+  <topic>2.2.3_Excluir_Per_odo_de_Vincula__o.htm
+  </topic>
+  <topic>2.3.1_Cadastrar_M_dulos.htm
+  </topic>
+  <topic>2.3.3_Visualizar_M_dulos.htm
+  </topic>
+  <topic>2.3.2_Pesquisar_M_dulos.htm
+  </topic>
+  <topic>2.3.5_Excluir_M_dulo.htm
+  </topic>
+  <topic>2.3.4_Editar_M_dulos.htm
+  </topic>
+  <topic>2.4.1_Cadastrar_Curso.htm
+  </topic>
+  <topic>2.4.2_Pesquisar_Curso.htm
+  </topic>
+  <topic>2.4.3_Visualizar_Curso.htm
+  </topic>
+  <topic>2.5.5_Excluir_Usu_rio.htm
+  </topic>
+  <topic>2.5.4_Editar_Usu_rio.htm
+  </topic>
+  <topic>2.5.6_Ativar___Inativar_Usu_rio.htm
+  </topic>
+  <topic>2.5.7_Visualizar_Hist_rico_Bolsista.htm
+  </topic>
+  <topic>3.1.2_Pesquisar_Turma.htm
+  </topic>
+  <topic>3.1.4_Editar_Turma.htm
+  </topic>
+  <topic>3.1.3_Visualizar_Turma.htm
+  </topic>
+  <topic>3.1.5_Excluir_Turma.htm
+  </topic>
+  <topic>3.1.10_Visualizar_Hist_rico.htm
+  </topic>
+  <topic>3.1.11_Notificar_cursistas_para_aval._curso.htm
+  </topic>
+  <topic>3.2.1_Pesquisar_Avalia__o_Pedag_gica.htm
+  </topic>
+  <topic>3.2.2_Visualizar_Avalia__o_Pedag_gica.htm
+  </topic>
+  <topic>3.2.3_Avaliar_Cursista.htm
+  </topic>
+  <topic>3.2.4_Finalizar_Turma.htm
+  </topic>
+  <topic>5.1.1_Emitir_Relat_rio.htm
+  </topic>
+  <topic>3.1.1_Cadastrar_Turmas.htm
+  </topic>
+  <topic>3.4.1_Emitir_Certificado.htm
+  </topic>
+  <topic>3.5.1_Paramentrizar_Documento.htm
+  </topic>
+  <topic>4.1.6_Verificar_Pendencias.htm
+  </topic>
+  <topic>4.1.2_Avaliar_Bolsista.htm
+  </topic>
+  <topic>4.1.1_Pesquisar_Bolsista.htm
+  </topic>
+  <topic>4.1.3_Solicitar_Homologacao.htm
+  </topic>
+  <topic>4.1.4_Homologar_Turma.htm
+  </topic>
+  <topic>4.1.5_Enviar_SGB.htm
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>Português(Brasil)
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="toc">
+   <filename>SICE.hhc
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="ndx">
+   <filename>SICE.hhk
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>SICE.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="gls">
+   <filename>SICE.glo
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_websearch">
+   <filename>SICE.ews
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>SICE.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>SICE.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="sym">
+   <filename>SICE.syn
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>
