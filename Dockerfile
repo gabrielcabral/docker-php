@@ -131,6 +131,7 @@ ADD conf.d/aplicacao_static.conf  /etc/httpd/conf.d/
 RUN mkdir /var/www/sice
 RUN mkdir /var/www/zend
 RUN mkdir /var/www/static
+ADD index.php /var/www/html/
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
